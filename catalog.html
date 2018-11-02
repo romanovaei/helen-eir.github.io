@@ -7,7 +7,7 @@
   <title>Каталог товаров</title>
 </head>
 <body>
-  <header class="header page">
+  <header class="header__page">
     <nav class="header__nav">
       <ul class="nav__list">
         <li class="nav__item nav__item_logo">
@@ -36,84 +36,86 @@
         <li class="nav__item nav__item_delivery">
           <span>Бесплатная доставка по России</span>
         </li>
+      </ul>
     </nav>
   </header>
   <main>
-    <section>
-      <h1>Каталог товаров</h1>
+    <section class="subhead">
+      <h1 class="subhead_title">Каталог товаров</h1>
     </section>
-    <section>
+    <section class="catalog__list">
 
-      <div>
-        <div>
+      <div class="catalog__product_item">
+        <div class="product__img">
           <img src="" alt="">
         </div>
-        <div>
-          <div>
-            <h3>Зайчик-попрыгайчик</h3>
-            <br>
-            <span>Рост 30 см, вес 200 г</span>
-          </div>
-          <div>
-            <span>1 200 руб.</span>
-          </div>
+        <div class="product__info">
+          <h3 class="product__info_title">Зайчик-попрыгайчик</h3>
+          <br>
+          <span class="product__info_desc">Рост 30 см, вес 200 г</span>
+          <span class="product__info_price">1 200 руб.</span>
         </div>
       </div>
 
-      <div>
-        <div>
+      <div class="catalog__product_item">
+        <div class="product__img">
           <img src="" alt="">
         </div>
-        <div>
-          <div>
-            <h3>Корзинка для белья</h3>
-            <br>
-            <span>Диаметр 15 см, высота 10 см</span>
-          </div>
-          <div>
-            <span>690 руб.</span>
-          </div>
+        <div class="product__info">
+          <h3 class="product__info_title">Корзинка для белья</h3>
+          <br>
+          <span class="product__info_desc">Диаметр 15 см, высота 10 см</span>
+          <span class="product__info_price">690 руб.</span>
         </div>
       </div>
 
-      <div>
-        <div>
+      <div class="catalog__product_item">
+        <div class="product__img">
           <img src="" alt="">
         </div>
-        <div>
-          <div>
-            <h3>Большая корзинка для игрушек</h3>
-            <br>
-            <span>Диаметр 30 см, высота 30 см</span>
-          </div>
-          <div>
-            <span>1 500 руб.</span>
-          </div>
+        <div class="product__info">
+          <h3 class="product__info_title">Большая корзинка для игрушек</h3>
+          <br>
+          <span class="product__info_desc">Диаметр 30 см, высота 30 см</span>
+          <span class="product__info_price">1 500 руб.</span>
         </div>
       </div>
+
     </section>
-    <section>
-      <div>
+    <section class="promo">
+      <div class="promo__video">
         <img src="" alt="">
       </div>
-      <div>
-        <h3>Процесс производства</h3>
-        <p>По просьбам наших любимых фолловеров мы сняли для вас подробное видео
+      <div class="promo_desc">
+        <h3 class="promo_desc_title">Процесс производства</h3>
+        <p class="promo_desc_text">По просьбам наших любимых фолловеров мы сняли для вас подробное видео
            о том, как появляются наши товары.</p>
-        <a href="">сделать заказ</a>
+        <a class="button" href="">сделать заказ</a>
       </div>
     </section>
   </main>
-  <footer>
-    <div></div>
-    <div>
-      <a href=""></a>
-      <a href=""></a>
-      <a href=""></a>
+  <footer class="footer__page">
+    <div class="footer__page_logo">
+      <a href="index.html"></a>
     </div>
-    <div>
+    <div class="social__links">
+      <a class="social__link_insta" href=""></a>
+      <a class="social__link_fb" href=""></a>
+      <a class="social__link_tw" href=""></a>
+    </div>
+    <div class="copyright">
       <span>Разработано</span>
     </div>
   </footer>
+  <section class="modal">
+    <h3 class="modal__title">добавить в корзину</h3>
+    <span>Выберите размер:</span>
+    <ul class="modal__list">
+      <li class="modal__item_small">s</li>
+      <li class="modal__item_medium">m</li>
+      <li class="modal__item_huge">l</li>
+    </ul>
+    <button class="modal__button" type="button">добавить</button>
+  </section>
 </body>
 </html>
