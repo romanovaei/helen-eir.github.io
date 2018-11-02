@@ -7,7 +7,7 @@
   <title>Вязание на заказ</title>
 </head>
 <body>
-  <header class="header page">
+  <header class="header__page">
     <nav class="header__nav">
       <ul class="nav__list">
         <li class="nav__item nav__item_logo">
@@ -49,7 +49,7 @@
         заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
       <div>
         <div>
-          <legend>тип</legend>
+          <legend class="mark">тип</legend>
         </div>
         <div>
           <input class="form__type form__type_accessory" type="radio" id="type__accessory_1" form="form" name="type" checked>
@@ -60,7 +60,7 @@
       </div>
       <div>
         <div>
-          <legend>цвет</legend>
+          <legend class="mark">цвет</legend>
         </div>
         <div>
           <input class="form__color form__color_white" type="checkbox" id="color_white" form="form" name="color" checked>
@@ -79,7 +79,7 @@
       </div>
       <div>
         <div>
-          <legend>фио</legend>
+          <legend class="mark">фио</legend>
         </div>
         <div>
           <label class="form__name form__name_first-name" for="name_first-name">Имя:</label>
@@ -92,17 +92,17 @@
       </div>
       <div>
         <div>
-          <legend>тел</legend>
+          <legend class="mark">тел</legend>
           <input class="form__tel" name="tel" type="tel" form="form" placeholder="+7 XXX XX XX" required>
         </div>
         <div>
-          <legend>e-mail</legend>
+          <legend class="mark">e-mail</legend>
           <input class="form__email" name="email" type="email" form="form" placeholder="Ваш Email" required>
         </div>
       </div>
       <div>
         <div>
-          <legend>доп</legend>
+          <legend class="mark">доп</legend>
         </div>
         <div>
           <textarea class="form__description" name="description" form="form" placeholder="Опишите все ваши пожелания к заказу">
@@ -115,14 +115,16 @@
       </div>
     </form>
   </main>
-  <footer>
-    <div></div>
-    <div>
-      <a href=""></a>
-      <a href=""></a>
-      <a href=""></a>
+  <footer class="footer__page">
+    <div class="footer__page_logo">
+      <a href="index.html"></a>
     </div>
-    <div>
+    <div class="social__links">
+      <a class="social__link_insta" href=""></a>
+      <a class="social__link_fb" href=""></a>
+      <a class="social__link_tw" href=""></a>
+    </div>
+    <div class="copyright">
       <span>Разработано</span>
     </div>
   </footer>
