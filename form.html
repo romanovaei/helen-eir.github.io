@@ -36,78 +36,81 @@
         <li class="nav__item nav__item_delivery">
           <span>Бесплатная доставка по России</span>
         </li>
+      </ul>
     </nav>
   </header>
   <main>
     <div>
       <h1>Вязание на заказ</h1>
     </div>
-    <form action="">
+    <form class="form" id="form" action="#" method="post">
+      <!-- <form action="mailto:heleneir63@gmail.com" enctype="text/plain"> проверка формы  -->
       <p>Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму
         заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
       <div>
         <div>
-          <span>тип</span>
+          <legend>тип</legend>
         </div>
         <div>
-          <input type="text">
-          <label for="">Аксессуар для интерьера</label>
-          <input type="text">
-          <label for="">Детская игрушка</label>
-        </div>
-      </div>
-      <div>
-        <div>
-          <span>цвет</span>
-        </div>
-        <div>
-          <input type="text">
-          <label for="">Белый</label>
-          <input type="text">
-          <label for="">Серый</label>
-          <input type="text">
-          <label for="">"Тиффани"</label>
-          <input type="text">
-          <label for="">Черный</label>
-          <input type="text">
-          <label for="">Розовый</label>
-          <input type="text">
-          <label for="">Оранжевый</label>
+          <input class="form__type form__type_accessory" type="radio" id="type__accessory_1" form="form" name="type" checked>
+          <label class="form__label form__label_radio" for="type__accessory_1">Аксессуар для интерьера</label>
+          <input class="form__type form__type_toy" type="radio" id="type__accessory_2" form="form" name="type">
+          <label class="form__label form__label_radio" for="type__accessory_2">Детская игрушка</label>
         </div>
       </div>
       <div>
         <div>
-          <span>фио</span>
+          <legend>цвет</legend>
         </div>
         <div>
-          <label for="">Имя:</label>
-          <input type="text" placeholder="Введите ваше имя" required>
-          <label for="">Фамилия:</label>
-          <input type="text" placeholder="Укажите фамилию" required>
-          <label for="">Отчество:</label>
-          <input type="text" placeholder="Отчество, если желаете">
+          <input class="form__color form__color_white" type="checkbox" id="color_white" form="form" name="color" checked>
+          <label class="form__label form__label_checkbox" for="color_white">Белый</label>
+          <input class="form__color form__color_grey" type="checkbox" id="color_grey" form="form" name="color" checked>
+          <label class="form__label form__label_checkbox" for="color_grey">Серый</label>
+          <input class="form__color form__color_tiffany" type="checkbox" id="color_tiffany" form="form" name="color">
+          <label class="form__label form__label_checkbox" for="color_tiffany">"Тиффани"</label>
+          <input class="form__color form__color_black" type="checkbox" id="color_black" form="form" name="color">
+          <label class="form__label form__label_checkbox" for="color_black">Черный</label>
+          <input class="form__color form__color_pink" type="checkbox" id="color_pink" form="form" name="color">
+          <label class="form__label form__label_checkbox" for="color_pink">Розовый</label>
+          <input class="form__color form__color_orange" type="checkbox" id="color_orange" form="form" name="color">
+          <label class="form__label form__label_checkbox" for="color_orange">Оранжевый</label>
         </div>
       </div>
       <div>
         <div>
-          <span>тел</span>
-          <input type="text" placeholder="+7 XXX XX XX" required>
+          <legend>фио</legend>
+        </div>
+        <div>
+          <label class="form__name form__name_first-name" for="name_first-name">Имя:</label>
+          <input class="form__name form__name_first-name" name="first-name" type="text" id="name_first-name" form="form" placeholder="Введите ваше имя" required>
+          <label class="form__name form__name_surname" for="name_surname">Фамилия:</label>
+          <input class="form__name form__name_surname" name="surname" type="text" id="name_surname" form="form" placeholder="Укажите фамилию" required>
+          <label class="form__name form__name_patronymic" for="name_patronymic">Отчество:</label>
+          <input class="form__name form__name_patronymic" name="patronymic" type="text" id="name_patronymic" form="form" placeholder="Отчество, если желаете">
+        </div>
+      </div>
+      <div>
+        <div>
+          <legend>тел</legend>
+          <input class="form__tel" name="tel" type="tel" form="form" placeholder="+7 XXX XX XX" required>
         </div>
         <div>
           <span>e-mail</span>
-          <input type="text" placeholder="Ваш Email" required>
+          <input class="form__email" name="email" type="email" form="form" placeholder="Ваш Email" required>
         </div>
       </div>
       <div>
         <div>
-          <span>доп</span>
+          <legend>доп</legend>
         </div>
         <div>
-          <input type="text" placeholder="Опишите все ваши пожелания к заказу">
+          <textarea class="form__description" name="description" form="form" placeholder="Опишите все ваши пожелания к заказу">
+          </textarea>
         </div>
       </div>
       <div>
-        <button type="button">отправить заказ</button>
+        <button class="button" form="form" type="submit">отправить заказ</button>
         <p>*Поля обязательны для заполнения</p>
       </div>
     </form>
