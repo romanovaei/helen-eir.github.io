@@ -4,7 +4,7 @@ var autoprefixer = require('gulp-autoprefixer');
 var concat = require('gulp-concat');
 var sourcemaps = require('gulp-sourcemaps');
 var cleancss = require('gulp-clean-css');
-var browserSync = require('browser-sync');//.create(); // (автоматическое обновление)
+var browserSync = require('browser-sync');
 
 gulp.task('less', function() {
   return gulp.src('app/less/**/*.less')
@@ -14,16 +14,15 @@ gulp.task('less', function() {
 });
 
 gulp.task('browser-sync', function() {
-  browserSync ({  // Выполняем browser Sync
-    server: {  // Определяем параметры сервера
-      baseDir: 'app'  // выбрали папку, которая будет сервером; Директория для сервера - app
+  browserSync ({  
+    server: {  
+      baseDir: 'app'  
     },
-    // notify: false   убрать уведомления в браузере
   });
 });
 
-gulp.task('watch', ['browser-sync', 'less'], function() {  // метод watch для проверки сохраняемости файлов; параметры в [] выполняются до watch
-  gulp.watch('app/less/**/*.less', ['less']); // в [] массив тех task'ов, которые будем выполнять
+gulp.task('watch', ['browser-sync', 'less'], function() {  
+  gulp.watch('app/less/**/*.less', ['less']); 
   gulp.watch('app/*.html', browserSync.reload);
   gulp.watch('app/js/**/*.js', browserSync.reload);
 });
