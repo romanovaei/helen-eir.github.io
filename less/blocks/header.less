@@ -1,4 +1,4 @@
-@border-color: #ececec;
+//@border-color: #ececec;
 
 * {
   box-sizing: border-box;
@@ -21,6 +21,10 @@ header {
   display: flex;
   flex-flow: row wrap;
 
+}
+.nav__item {
+  z-index: 10;
+  opacity: 0.99;
 }
 .container {
   margin: 0 auto;
@@ -432,6 +436,10 @@ nav li {
     display: none;
   }
 }
+
+
+
+
 /*
 .qqq {
   border: 1px solid green;
@@ -450,10 +458,6 @@ nav li {
   height: 32px;
 
 }*/
-main, footer, section:last-child {
-  position: absolute;
-  top: 500px;
-}
 /*@media (max-width: 1149px) {
   .nav__item_delivery {
     height: 60px;
