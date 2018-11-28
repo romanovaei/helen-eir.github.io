@@ -89,7 +89,9 @@
       </div>
     </section>
     <section class="product__hit container">
-      <span class="mark">Товар недели</span>
+      <div class="product__hit_mark">
+        <span class="mark">Товар недели</span>
+      </div>
       <div class="product__hit_block">
         <h2 class="product__hit_title main__title">Вязаные корзинки</h2>
         <p class="product__hit_desc">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
@@ -100,7 +102,7 @@
                 Цвет:
               </td>
               <td>
-                «Тиффани»⁄серый
+                «Тиффани»серый
               </td>
             </tr>
             <tr>
@@ -121,11 +123,19 @@
             </tr>
           </tbody>
         </table>
+
+        <div class="product__hit_price">
+          <span>Цена: 990 руб.</span>
+          <button class="button product__hit_button" type="button">Заказать</button>
+        </div>
       </div>
 
-      <div>
-        <span></span>
-        <button class="button" type="button">Заказать</button>
+      <div class="product__hit_img">
+        <picture>
+          <source media="(max-width: 767px)" srcset="img/triple_set_mobile.jpg">
+          <source media="(max-width: 1149px)" srcset="img/triple_set_tablet.jpg">
+          <img src="img/triple_set_desktop.jpg" alt="Корзинки">
+        </picture>
       </div>
     </section>
     <section class="advantages container">

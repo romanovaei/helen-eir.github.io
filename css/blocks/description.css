@@ -8,12 +8,16 @@
   position: relative;
   top: -60px;
   z-index: 5;
-  /*  background: url(../img/bg_sine_wave_fill.svg), url(../img/hero_desktop-tablet.jpg);
-    background-position: 0 bottom, center;
-    background-repeat: repeat-x, no-repeat;
-
-    border-image: url(../img/bg_sine_wave_fill.svg) 30 round round;
-  }*/
+}
+.description::after {
+  content: "";
+  background: url(../img/bg_sine_wave_fill.svg) repeat-x;
+  position: relative;
+  top: -15px;
+  display: flex;
+  width: 100%;
+  height: 15px;
+  z-index: 8;
 }
 .description__box {
   width: 1150px;
@@ -22,8 +26,6 @@
   text-align: center;
 }
 .description__box .main__title {
-  font-size: 53px;
-  line-height: 57px;
   padding-top: 153px;
 }
 @media (max-width: 1149px) {
@@ -44,6 +46,9 @@
     background-position: top center;
     position: relative;
     top: 0px;
+  }
+  .description::after {
+    content: none;
   }
   .description .description__box {
     width: 320px;
@@ -115,19 +120,30 @@
   .description_subtitle {
     display: flex;
     flex-flow: column wrap;
+    height: 206px;
   }
-  .description_subtitle span {
-    display: block;
-    width: 120px;
-  }
-  .description_subtitle svg {
-    opacity: 0.5;
-    position: relative;
+  .description_subtitle:hover {
+    height: 211px;
   }
   .description_subtitle .description_subtitle_item {
     top: 121px;
     width: 320px;
     height: 103px;
+  }
+  .description_subtitle .description_subtitle_item:hover {
+    height: 108px;
+    top: 116px;
+  }
+  .description_subtitle .description_subtitle_item a {
+    padding: 24px 36px 0 30px;
+  }
+  .description_subtitle .description_subtitle_item a span {
+    display: block;
+    width: 120px;
+  }
+  .description_subtitle .description_subtitle_item a svg {
+    opacity: 0.5;
+    position: relative;
   }
 }
 .description_subtitle_left svg {
@@ -144,9 +160,12 @@
     left: 80px;
   }
 }
-@media (max-width: 1149px) {
-  .description_subtitle_item {
-    top: 373px;
+@media (max-width: 767px) {
+  .description_subtitle_left svg {
+    left: 94px;
+  }
+  .description_subtitle_right svg {
+    left: 83px;
   }
 }
 /*
@@ -154,8 +173,8 @@
   border: 1px solid red;
   position: absolute;
   top: 80px;
-  width: 320px;
-  height: 313px;
+  width: 233px;
+  height: 903px;
   z-index: 15;
 }
 .aaa {
