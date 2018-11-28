@@ -9,8 +9,11 @@ header {
   heiht: 89px;
 }
 @media (max-width: 767px) {
-  header {
+  .header__page_close {
     height: 80px;
+  }
+  .header__page_open {
+    height: 396px;
   }
 }
 .nav__list {
@@ -46,15 +49,20 @@ header {
 @media (max-width: 767px) {
   .nav__button_menu {
     display: block;
-    /*position: relative;
-    top: 10px;
-    left: 65px;*/
     position: absolute;
     top: 32px;
     right: 30px;
+  }
+  .nav__button_menu_close {
     background: url(/img/icon_menu_open.svg) no-repeat;
     width: 20px;
     height: 14px;
+  }
+  .nav__button_menu_open {
+    background: url(/img/icon_menu_close.svg) no-repeat;
+    width: 21px;
+    height: 21px;
+    top: 28px;
   }
 }
 a {
@@ -405,7 +413,7 @@ nav li {
   }
 }
 @media (max-width: 767px) {
-  .nav__menu_open .nav__item_hidden {
+  .nav__menu_open {
     display: flex;
   }
   .nav__item_hidden {
@@ -417,17 +425,17 @@ nav li {
   border: 1px solid green;
   position: absolute;
   top: 0px;
-  width: 76px;
-  height: 680px;
+  width: 400px;
+  height: 29px;
 
 }
 .aaa {
   border: 1px solid red;
   position: absolute;
-  top: 317px;
-  left: 50px;
-  width: 400px;
-  height: 32px;
+  top: 0px;
+  left: 125px;
+  width: 269px;
+  height: 80px;
 
 }*/
 /*@media (max-width: 1149px) {
