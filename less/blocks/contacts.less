@@ -1,0 +1,71 @@
+@text-color-green: #62d1ba;
+@text-color-grey: #444444;
+
+.contacts {
+  display: flex;
+  align-content: space-between;
+  flex-flow: column wrap;
+  width: 1050px;
+  height: 633px;
+  padding: 72px 0 0 175px;
+
+  .contacts__box {
+    flex: 40%;
+    padding-top: 71px;
+    max-height: 120px;
+
+    svg {
+      position: relative;
+      top: -67px;
+      left: -114px;
+    }
+  }
+
+  .contacts__table {
+    margin-top: 61px;
+    flex: 40%;
+    border-collapse: collapse;
+    color: @text-color-grey;
+
+
+    a {
+      color: @text-color-grey;
+      border-bottom: 1px solid @text-color-green;
+
+      &:hover {
+        color: @text-color-green;
+      }
+
+      &:active {
+        opacity: 0.3;
+      }
+    }
+
+    td {
+      height: 61px; //  но это не точно
+      vertical-align: top;
+
+      &:nth-of-type(1) {
+        table-layout: fixed;
+        width: 76px;
+      }
+    }
+  }
+
+  .contacts__button {
+    width: 230px;
+    margin-top: 102px;
+  }
+
+  .contacts__map {
+    flex: 60%;
+    width: 525px;
+    height: 457px;
+
+    iframe {
+      width: 525px;
+      height: 457px;
+      border: none;
+    }
+  }
+}

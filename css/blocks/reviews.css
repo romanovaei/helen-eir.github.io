@@ -48,6 +48,12 @@
   padding: 47px 17px;
   background: transparent;
 }
+.reviews .reviews__arrows button:hover {
+  opacity: 0.6;
+}
+.reviews .reviews__arrows button:active {
+  opacity: 0.3;
+}
 /*.qqq {
   border: 1px solid red;
   position: absolute;

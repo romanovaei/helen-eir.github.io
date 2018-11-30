@@ -1,0 +1,84 @@
+@bg-color-grey: #f1f1f1;
+@light-green: #63d1bb;
+@color-green: #46c1ae;
+
+.footer__page {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 1250px;
+  height: 143px;
+  background: @bg-color-grey;
+
+  .footer__page_logo {
+    position: relative;
+    left: 100px;
+    cursor: pointer;
+
+    &:hover {
+      fill: @color-green;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+  }
+
+  .social__links {
+    position: relative;
+    left: 28px;
+
+    a:nth-of-type(1) {
+      padding-right: 40px;
+    }
+
+    a:nth-of-type(2) {
+      padding-right: 40px;
+      position: relative;
+      top: 2px;
+    }
+
+    a:nth-of-type(3) {
+      padding: 0;
+      position: relative;
+      top: -2px;
+    }
+
+    svg:hover {
+      fill: @color-green;
+    }
+
+    svg:active {
+      opacity: 0.3;
+    }
+  }
+
+  .copyright {
+    position: relative;
+    right: 101px;
+    font-size: 19px;
+    line-height: 18px;
+    font-weight: bold;
+
+    span {
+      position: relative;
+      top: -7px;
+      right: 29px;
+    }
+
+    svg {
+      position: relative;
+      top: 5px;
+      fill: @light-green;
+
+      &:hover {
+        fill: @color-green;
+      }
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+  }
+}
