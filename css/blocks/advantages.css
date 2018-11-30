@@ -9,9 +9,47 @@
 }
 .advantages .advantages__list .advantages__item {
   flex: 50%;
-  width: 350px;
   font-size: 20px;
   line-height: 22px;
   font-weight: bold;
-  padding-right: 50px;
+  padding-top: 44px;
 }
+.advantages .advantages__list .advantages__item svg {
+  width: 56px;
+  height: 38px;
+  position: relative;
+  left: -7px;
+}
+.advantages .advantages__list .advantages__item p {
+  word-wrap: break-word;
+}
+.advantages .advantages__list .advantages__item:nth-child(1) p,
+.advantages .advantages__list .advantages__item:nth-child(2) p {
+  padding-top: 17px;
+}
+.advantages .advantages__list .advantages__item:nth-child(3) p,
+.advantages .advantages__list .advantages__item:nth-child(4) p {
+  padding-top: 26px;
+}
+.advantages .advantages__list .advantages__item:nth-child(5) p,
+.advantages .advantages__list .advantages__item:nth-child(6) p {
+  padding-top: 21px;
+}
+/*
+.qqq {
+  border: 1px solid green;
+  position: absolute;
+  top: 1833px;
+  width: 1400px;
+  height: 29px;
+
+}
+.aaa {
+  border: 1px solid red;
+  position: absolute;
+  top: 0px;
+  left: 125px;
+  width: 269px;
+  height: 80px;
+
+}*/

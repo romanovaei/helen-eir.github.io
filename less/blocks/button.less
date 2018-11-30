@@ -1,9 +1,26 @@
+@text-color-grey: #444444;
+
 .button {
   font-size: 17px;
   line-height: 20px;
+  height: 52px;
   font-weight: bold;
   color: @text-color-grey;
   text-transform: uppercase;
+  background-color: transparent;
+  cursor: pointer;
   border: 2px solid @text-color-grey;
-  padding: 18px 0;
+
+  &:hover {
+    background: @text-color-grey;
+    color: #fff;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  &:focus {
+    outline: none;
+  }
 }

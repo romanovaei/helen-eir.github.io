@@ -1,3 +1,7 @@
+@text-color: #63d1bb;
+@border-color: #ececec;
+@text-color-grey: #444444;
+
 .advantages {
   width: 1050px;
   height: 663px;
@@ -9,11 +13,48 @@
 
     .advantages__item {
       flex: 50%;
-      width: 350px;
       font-size: 20px;
       line-height: 22px;
       font-weight: bold;
-      padding-right: 50px;  // временно? пока не поменяю пестами элементы
+      padding-top: 44px;
+
+      svg {
+        width: 56px;
+        height: 38px;
+        position: relative;
+        left: -7px;
+      }
+      p {
+        word-wrap: break-word;
+      }
+      &:nth-child(1) p, &:nth-child(2) p {
+        padding-top: 17px;
+      }
+      &:nth-child(3) p, &:nth-child(4) p {
+        padding-top: 26px;
+      }
+      &:nth-child(5) p, &:nth-child(6) p {
+        padding-top: 21px;
+      }
     }
   }
 }
+
+/*
+.qqq {
+  border: 1px solid green;
+  position: absolute;
+  top: 1833px;
+  width: 1400px;
+  height: 29px;
+
+}
+.aaa {
+  border: 1px solid red;
+  position: absolute;
+  top: 0px;
+  left: 125px;
+  width: 269px;
+  height: 80px;
+
+}*/

@@ -1,9 +1,21 @@
 .button {
   font-size: 17px;
   line-height: 20px;
+  height: 52px;
   font-weight: bold;
   color: #444444;
   text-transform: uppercase;
+  background-color: transparent;
+  cursor: pointer;
   border: 2px solid #444444;
-  padding: 18px 0;
+}
+.button:hover {
+  background: #444444;
+  color: #fff;
+}
+.button:active {
+  opacity: 0.3;
+}
+.button:focus {
+  outline: none;
 }

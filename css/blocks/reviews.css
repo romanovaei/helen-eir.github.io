@@ -1,0 +1,57 @@
+.reviews {
+  display: flex;
+  flex-flow: row wrap;
+  align-content: flex-start;
+  width: 1050px;
+  height: 547px;
+  padding: 80px 0 0 175px;
+  background: url(../img/review_desktop.jpg), url(../img/bg_sine_wave.svg);
+  background-position: left top, 130px bottom;
+  background-size: auto, 100%;
+  background-repeat: no-repeat, repeat-x;
+}
+.reviews .reviews__title {
+  flex: 80%;
+  height: 65px;
+}
+.reviews .reviews__button_write {
+  flex: 20%;
+  height: 105px;
+}
+.reviews .reviews__button_write button {
+  width: 100%;
+}
+.reviews .reviews__list {
+  flex: 100%;
+  font-size: 17px;
+  line-height: 30px;
+}
+.reviews .reviews__list p {
+  width: 85%;
+}
+.reviews .reviews__author {
+  flex: 80%;
+  padding-top: 38px;
+}
+.reviews .reviews__author .reviews__author_name {
+  font-weight: bold;
+}
+.reviews .reviews__author span:last-child {
+  position: relative;
+  top: 10px;
+}
+.reviews .reviews__arrows {
+  flex: 20%;
+}
+.reviews .reviews__arrows button {
+  border: none;
+  padding: 47px 17px;
+  background: transparent;
+}
+/*.qqq {
+  border: 1px solid red;
+  position: absolute;
+  top: 2690px;
+  width: 1400px;
+  height: 14px;
+}*/

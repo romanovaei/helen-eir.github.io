@@ -1,13 +1,13 @@
-.main__title {
-  font-size: 53px;
-  line-height: 57px;
-}
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
   font-family: Arial, sans-serif;
   list-style: none;
+}
+.main__title {
+  font-size: 53px;
+  line-height: 57px;
 }
 header {
   heiht: 89px;
@@ -649,8 +649,8 @@ nav li {
   top: -60px;
   background: url(../img/bg_sine_wave.svg);
   background-position: 130px bottom;
-  background-repeat: repeat-x;
   background-size: 100%;
+  background-repeat: repeat-x;
 }
 .product__hit_mark {
   flex: 1 175px;
@@ -723,32 +723,26 @@ nav li {
   flex: 3 525px;
   padding-top: 71px;
 }
-/*
-.qqq {
-  border: 1px solid green;
-  position: absolute;
-  top: 1289px;
-  width: 1233px;
-  height: 23px;
-  z-index: 15;
-}
-.aaa {
-  border: 1px solid blue;
-  position: absolute;
-  top: 0px;
-  left: 229px;
-  width: 74px;
-  height: 1435px;
-  z-index: 15;
-}*/
 .button {
   font-size: 17px;
   line-height: 20px;
+  height: 52px;
   font-weight: bold;
   color: #444444;
   text-transform: uppercase;
+  background-color: transparent;
+  cursor: pointer;
   border: 2px solid #444444;
-  padding: 18px 0;
+}
+.button:hover {
+  background: #444444;
+  color: #fff;
+}
+.button:active {
+  opacity: 0.3;
+}
+.button:focus {
+  outline: none;
 }
 .advantages {
   width: 1050px;
@@ -761,9 +755,104 @@ nav li {
 }
 .advantages .advantages__list .advantages__item {
   flex: 50%;
-  width: 350px;
   font-size: 20px;
   line-height: 22px;
   font-weight: bold;
-  padding-right: 50px;
+  padding-top: 44px;
 }
+.advantages .advantages__list .advantages__item svg {
+  width: 56px;
+  height: 38px;
+  position: relative;
+  left: -7px;
+}
+.advantages .advantages__list .advantages__item p {
+  word-wrap: break-word;
+}
+.advantages .advantages__list .advantages__item:nth-child(1) p,
+.advantages .advantages__list .advantages__item:nth-child(2) p {
+  padding-top: 17px;
+}
+.advantages .advantages__list .advantages__item:nth-child(3) p,
+.advantages .advantages__list .advantages__item:nth-child(4) p {
+  padding-top: 26px;
+}
+.advantages .advantages__list .advantages__item:nth-child(5) p,
+.advantages .advantages__list .advantages__item:nth-child(6) p {
+  padding-top: 21px;
+}
+/*
+.qqq {
+  border: 1px solid green;
+  position: absolute;
+  top: 1833px;
+  width: 1400px;
+  height: 29px;
+
+}
+.aaa {
+  border: 1px solid red;
+  position: absolute;
+  top: 0px;
+  left: 125px;
+  width: 269px;
+  height: 80px;
+
+}*/
+.reviews {
+  display: flex;
+  flex-flow: row wrap;
+  align-content: flex-start;
+  width: 1050px;
+  height: 547px;
+  padding: 80px 0 0 175px;
+  background: url(../img/review_desktop.jpg), url(../img/bg_sine_wave.svg);
+  background-position: left top, 130px bottom;
+  background-size: auto, 100%;
+  background-repeat: no-repeat, repeat-x;
+}
+.reviews .reviews__title {
+  flex: 80%;
+  height: 65px;
+}
+.reviews .reviews__button_write {
+  flex: 20%;
+  height: 105px;
+}
+.reviews .reviews__button_write button {
+  width: 100%;
+}
+.reviews .reviews__list {
+  flex: 100%;
+  font-size: 17px;
+  line-height: 30px;
+}
+.reviews .reviews__list p {
+  width: 85%;
+}
+.reviews .reviews__author {
+  flex: 80%;
+  padding-top: 38px;
+}
+.reviews .reviews__author .reviews__author_name {
+  font-weight: bold;
+}
+.reviews .reviews__author span:last-child {
+  position: relative;
+  top: 10px;
+}
+.reviews .reviews__arrows {
+  flex: 20%;
+}
+.reviews .reviews__arrows button {
+  border: none;
+  padding: 47px 17px;
+  background: transparent;
+}
+/*.qqq {
+  border: 1px solid red;
+  position: absolute;
+  top: 2690px;
+  width: 1400px;
+  height: 14px;
+}*/
