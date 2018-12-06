@@ -5,10 +5,33 @@
   font-family: Arial, sans-serif;
   list-style: none;
 }
-.main__title {
-  font-size: 53px;
-  line-height: 57px;
+.container {
+  margin: 0 auto;
 }
 a {
   cursor: pointer;
+  text-decoration: none;
+  color: #000;
+}
+button {
+  cursor: pointer;
+}
+li {
+  list-style-type: none;
+}
+.main__title {
+  font-size: 25px;
+  line-height: 30px;
+}
+@media (min-width: 768px) {
+  .main__title {
+    font-size: 43px;
+    line-height: 50px;
+  }
+}
+@media (min-width: 1150px) {
+  .main__title {
+    font-size: 53px;
+    line-height: 57px;
+  }
 }

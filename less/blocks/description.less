@@ -1,208 +1,167 @@
-@light-green: #63d1bb;
-@border-color: #ececec;
-@text-color-grey: #444444;
+@tablet-width: ~"(min-width: 768px)";
+@desktop-width: ~"(min-width: 1150px)";
+@fill-light-color: #63d1bb;
+@fill-normal-color: #56c3b2;
+@bg-normal-color: #f9f9f9;
 
-.description  {
+.description {
   width: 100%;
-  height: 742px;
-  background: url(../img/hero_desktop-tablet.jpg);
-  background-color: #f9f9f9;
+  height: 488px;
+  background: url(../img/hero_mobile.jpg);
+  background-color: @bg-normal-color;
   background-position: center;
   background-repeat: no-repeat;
-  position: relative;
-  top: -60px;
   z-index: 5;
 
-  &::after {
-    content: "";
-    background: url(../img/bg_sine_wave_fill.svg) repeat-x;
-    position: relative;
-    top: -15px;
-    display: flex;
-    width: 100%;
-    height: 15px;
-    z-index: 8
-  }
-}
+  @media @tablet-width {
+    height: 743px;
+    background: url(../img/hero_desktop-tablet.jpg);
+    background-color: @bg-normal-color;
+    background-position: center;
+    background-repeat: no-repeat;
 
-.description__box {
-  width: 1150px;
-  height: 742px;
-  margin: 0 auto;
-  text-align: center;
-
-  .main__title {
-    padding-top: 153px;
-  }
-}
-@media (max-width: 1149px) {
-  .description__box {
-    width: 668px;
-
-    .main__title {
-      font-size: 43px;
-      line-height: 50px;
-    }
-  }
-}
-@media (max-width: 767px)  {
-  .description {
-    background: url(../img/hero_mobile.jpg) no-repeat;
-    width: 100%;
-    height: 488px;
-    background-color: #f9f9f9;
-    background-position: top center;
-    position: relative;
-    top: 0px;
     &::after {
-      content: none;
+      content: "";
+      background: url(../img/bg_sine_wave_fill.svg) repeat-x;
+      position: relative;
+      top: -15px;
+      display: flex;
+      width: 100%;
+      height: 15px;
+      z-index: 8;
     }
 
-    .description__box {
-      width: 320px;
-
-      .main__title {
-        width: 260px;
-        font-size: 27px;
-        line-height: 30px;
-        padding-top: 71px;
-        margin: 0 auto;   //  правильно ли?
-      }
+    &__box {
+      height: 743px;
     }
   }
 }
+.description_title() {
+  text-align: center;
+  padding-top: 71px;
+  font-size: 27px;
+
+  @media @tablet-width {
+    padding-top: 154px;
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  @media @desktop-width {
+    font-size: 53px;
+    line-height: 57px;
+  }
+}
+
+.description__main_title {
+  .description_title();
+  width: 260px;
+  margin: 0 auto;
+
+  @media @tablet-width {
+    width: auto;
+  }
+}
+
 .description_subtitle {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  text-align: left;
+  position: relative;
+  top: 121px;
+  font-size: 19px;
+  line-height: 24px;
+  font-weight: bold;
 
-  .description_subtitle_item {
-    position: relative;
-    top: 359px;
-    width: 525px;
-    height: 116px;
-    background: #63d1bb;
-
-    &:last-child {
-    background: #56c3b2;
-
-    }
-    &:hover {
-      height: 121px;
-      top: 354px;
-
-      svg {
-        opacity: 0.7;
-      }
-    }
-    &:active {
-      span, svg {
-        opacity: 0.3;
-      }
-    }
-  }
-}
-.description_subtitle a {
+  @media @tablet-width {
     display: flex;
     flex-direction: row;
-    padding: 29px 36px 0 36px;
-    color: #fff;
+    justify-content: center;
+    top: 372px;
     font-size: 20px;
     line-height: 30px;
-    font-weight: bold;
-    cursor: pointer;
+  }
+
+  @media @desktop-width {
+    top: 358px;
+  }
+}
+.description_subtitle_item {
+  height: 103px;
+  padding-left: 9.3%;
+  color: #fff;
+
+  @media @tablet-width {
+    height: 117px;
+    width: 334px;
+    padding-left: 35px;
+  }
+
+  @media @desktop-width {
+    width: 525px;
+    padding-left: 36px;
+  }
+
     span {
       display: block;
       width: 120px;
+      padding-top: 27px;
+      color: #fff;
+
+      @media @tablet-width {
+        padding-top: 30px;
+      }
+
+      @media @desktop-width {
+        padding-top: 29px;
+      }
     }
+
     svg {
-      opacity: 0.5;
       position: relative;
-    }
-}
-@media (max-width: 1149px) {
-  .description_subtitle .description_subtitle_item {
-    top: 373px;
-    width: 334px;
+      display: block;
+      left: 76%; //214
+      opacity: 0.5;
 
-    &:hover {
-      height: 121px;
-      top: 368px;
-    }
-  }
-}
-@media (max-width: 767px) {
-  .description_subtitle  {
-      display: flex;
-      flex-flow: column wrap;
-      height: 206px;
-
-      &:hover {
-        height: 211px;
+      @media @tablet-width {
+        left: 222px;
       }
 
-      .description_subtitle_item {
-        top: 121px;
-        width: 320px;
-        height: 103px;
-
-        &:hover {
-          height: 108px;
-          top: 116px;
-        }
-
-        a {
-          padding: 24px 36px 0 30px;
-
-          span {
-            display: block;
-            width: 120px;
-          }
-          svg {
-            opacity: 0.5;
-            position: relative;
-          }
-        }
+      @media @desktop-width {
+        left: 412px;
       }
+    }
+
+    &:first-child {
+      background: @fill-light-color;
+
+    svg {
+      top: -52px;
+
+      @media @tablet-width {
+        top: -59px;
+      }
+
+      @media @desktop-width {
+
+      }
+
+    }
+  }
+
+  &:last-child {
+    background: @fill-normal-color;
+
+    svg {
+      top: -55px;
+      left: 72.8%;  // 203
+
+      @media @tablet-width {
+        top: -59px;
+        left: 205px;
+      }
+
+      @media @desktop-width {
+        top: -58px;
+        left: 394px;
+      }
+    }
   }
 }
-.description_subtitle_left svg {
-  left: 290px;
-}
-.description_subtitle_right svg {
-  left: 271px;
-}
-@media (max-width: 1149px) {
-  .description_subtitle_left svg {
-    left: 99px;
-  }
-  .description_subtitle_right svg {
-    left: 80px;
-  }
-}
-@media (max-width: 767px) {
-  .description_subtitle_left svg {
-    left: 94px;
-  }
-  .description_subtitle_right svg {
-    left: 83px;
-  }
-}
-/*
-.qqq {
-  border: 1px solid red;
-  position: absolute;
-  top: 80px;
-  width: 233px;
-  height: 903px;
-  z-index: 15;
-}
-.aaa {
-  border: 1px solid blue;
-  position: absolute;
-  top: 80px;
-  width: 320px;
-  height: 488px;
-  z-index: 15;
-}*/

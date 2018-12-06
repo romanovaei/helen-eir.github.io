@@ -1,60 +1,84 @@
-@light-green: #63d1bb;
-@border-color: #ececec;
-@text-color-grey: #444444;
+@tablet-width: ~"(min-width: 768px)";
+@desktop-width: ~"(min-width: 1150px)";
 
 .advantages {
-  width: 1050px;
-  height: 663px;
-  padding: 0 175px;
+  height: 829px;
+  padding: 0 9.3%;
+}
+
+.advantages__title {
+  padding-top: 30px;
+}
+
+.advantages__list {
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+}
+
+.advantages__item {
+  height: 123px;
+
+  p {
+    padding-top: 14px;
+    font-size: 17px;
+    line-height: 20px;
+    font-weight: bold;
+  }
+}
+
+.advantages__item_block {
+  display: flex;
+  align-items: center;
+  height: 38px;
+
+  svg {
+    width: 56px;
+    position: relative;
+    left: -6px;
+  }
+}
+
+@media @tablet-width {
+  .advantages {
+    width: 668px;
+    height: 600px;
+    padding: 0;
+  }
+
+  .advantages__title {
+    padding-top: 51px;
+  }
 
   .advantages__list {
-    display: flex;
-    flex-flow: row wrap;
+    flex-wrap: wrap;
+    height: 480px;
+    margin-top: 50px;
+  }
 
-    .advantages__item {
-      flex: 50%;
+  .advantages__item {
+    width: 334px;
+    height: 155px;
+
+    p {
       font-size: 20px;
       line-height: 22px;
-      font-weight: bold;
-      padding-top: 44px;
-
-      svg {
-        width: 56px;
-        height: 38px;
-        position: relative;
-        left: -7px;
-      }
-      p {
-        word-wrap: break-word;
-      }
-      &:nth-child(1) p, &:nth-child(2) p {
-        padding-top: 17px;
-      }
-      &:nth-child(3) p, &:nth-child(4) p {
-        padding-top: 26px;
-      }
-      &:nth-child(5) p, &:nth-child(6) p {
-        padding-top: 21px;
-      }
     }
   }
 }
 
-/*
-.qqq {
-  border: 1px solid green;
-  position: absolute;
-  top: 1833px;
-  width: 1400px;
-  height: 29px;
+@media @desktop-width {
+  .advantages {
+    padding: 0 175px;
+    padding-top: 62px;
+    width: 1050px;
+  }
 
+  .advantages__title {
+    padding-top: 2px; //
+  }
+
+  .advantages__list {
+    margin-top: 47px;
+  }
 }
-.aaa {
-  border: 1px solid red;
-  position: absolute;
-  top: 0px;
-  left: 125px;
-  width: 269px;
-  height: 80px;
-
-}*/
