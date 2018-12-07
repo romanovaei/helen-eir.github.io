@@ -46,6 +46,15 @@
 .reviews__button_arrow:first-child {
   border-right: none;
 }
+.reviews__button_arrow:hover {
+  opacity: 0.6;
+}
+.reviews__button_arrow:active {
+  opacity: 0.3;
+}
+.reviews__button_arrow:focus {
+  outline: none;
+}
 @media (min-width: 768px) {
   .reviews {
     background-image: url(../img/review_desktop.jpg), url(../img/bg_sine_wave.svg);

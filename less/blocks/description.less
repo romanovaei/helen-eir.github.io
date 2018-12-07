@@ -12,8 +12,80 @@
   background-position: center;
   background-repeat: no-repeat;
   z-index: 5;
+}
+.description_title() {
+  text-align: center;
+  padding-top: 71px;
+  font-size: 27px;
+}
 
-  @media @tablet-width {
+.description__main_title {
+  .description_title();
+  width: 260px;
+  margin: 0 auto;
+}
+
+.description_subtitle {
+  position: relative;
+  top: 121px;
+  font-size: 19px;
+  line-height: 24px;
+  font-weight: bold;
+}
+.description_subtitle_item {
+  height: 103px;
+  padding-left: 9.3%;
+  color: #fff;
+
+  span {
+    display: block;
+    width: 120px;
+    padding-top: 27px;
+    color: #fff;
+  }
+
+  svg {
+    position: relative;
+    display: block;
+    left: 76%;
+    opacity: 0.5;
+    fill: #149080;
+  }
+
+  &:first-child {
+    background: @fill-light-color;
+
+    svg {
+      top: -52px;
+    }
+  }
+
+  &:last-child {
+    background: @fill-normal-color;
+
+    svg {
+      top: -55px;
+      left: 72.8%;
+    }
+  }
+
+  &:hover {
+    height: 108px;
+    margin-top: -5px;
+
+    svg {
+      opacity: 0.7;
+    }
+  }
+
+  &:active span,
+  &:active svg {
+    opacity: 0.3;
+  }
+}
+
+@media @tablet-width {
+  .description {
     height: 743px;
     background: url(../img/hero_desktop-tablet.jpg);
     background-color: @bg-normal-color;
@@ -35,42 +107,19 @@
       height: 743px;
     }
   }
-}
-.description_title() {
-  text-align: center;
-  padding-top: 71px;
-  font-size: 27px;
 
-  @media @tablet-width {
+  .description_title() {
     padding-top: 154px;
     font-size: 43px;
     line-height: 50px;
   }
 
-  @media @desktop-width {
-    font-size: 53px;
-    line-height: 57px;
-  }
-}
-
-.description__main_title {
-  .description_title();
-  width: 260px;
-  margin: 0 auto;
-
-  @media @tablet-width {
+  .description__main_title {
+    .description_title();
     width: auto;
   }
-}
 
-.description_subtitle {
-  position: relative;
-  top: 121px;
-  font-size: 19px;
-  line-height: 24px;
-  font-weight: bold;
-
-  @media @tablet-width {
+  .description_subtitle {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -79,89 +128,63 @@
     line-height: 30px;
   }
 
-  @media @desktop-width {
-    top: 358px;
-  }
-}
-.description_subtitle_item {
-  height: 103px;
-  padding-left: 9.3%;
-  color: #fff;
-
-  @media @tablet-width {
+  .description_subtitle_item {
     height: 117px;
     width: 334px;
     padding-left: 35px;
-  }
-
-  @media @desktop-width {
-    width: 525px;
-    padding-left: 36px;
-  }
 
     span {
-      display: block;
-      width: 120px;
-      padding-top: 27px;
-      color: #fff;
-
-      @media @tablet-width {
-        padding-top: 30px;
-      }
-
-      @media @desktop-width {
-        padding-top: 29px;
-      }
+      padding-top: 30px;
     }
 
     svg {
-      position: relative;
-      display: block;
-      left: 76%; //214
-      opacity: 0.5;
-
-      @media @tablet-width {
-        left: 222px;
-      }
-
-      @media @desktop-width {
-        left: 412px;
-      }
+      left: 222px;
     }
 
-    &:first-child {
-      background: @fill-light-color;
+    &:first-child svg {
+      top: -59px;
+    }
 
-    svg {
-      top: -52px;
+    &:last-child svg {
+      top: -59px;
+      left: 205px;
+    }
 
-      @media @tablet-width {
-        top: -59px;
-      }
-
-      @media @desktop-width {
-
-      }
-
+    &:hover {
+      height: 122px;
     }
   }
+}
 
-  &:last-child {
-    background: @fill-normal-color;
+@media @desktop-width {
+  .description_title() {
+    font-size: 53px;
+    line-height: 57px;
+  }
+
+  .description__main_title {
+    .description_title();
+  }
+
+  .description_subtitle {
+    top: 358px;
+  }
+
+  .description_subtitle_item {
+    width: 525px;
+    padding-left: 36px;
+
+    span {
+      padding-top: 29px;
+    }
 
     svg {
-      top: -55px;
-      left: 72.8%;  // 203
+      left: 412px;
+    }
 
-      @media @tablet-width {
-        top: -59px;
-        left: 205px;
-      }
-
-      @media @desktop-width {
-        top: -58px;
-        left: 394px;
-      }
+    &:last-child svg {
+      top: -58px;
+      left: 394px;
     }
   }
 }

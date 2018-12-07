@@ -7,6 +7,62 @@
   background-repeat: no-repeat;
   z-index: 5;
 }
+.description__main_title {
+  text-align: center;
+  padding-top: 71px;
+  font-size: 27px;
+  width: 260px;
+  margin: 0 auto;
+}
+.description_subtitle {
+  position: relative;
+  top: 121px;
+  font-size: 19px;
+  line-height: 24px;
+  font-weight: bold;
+}
+.description_subtitle_item {
+  height: 103px;
+  padding-left: 9.3%;
+  color: #fff;
+}
+.description_subtitle_item span {
+  display: block;
+  width: 120px;
+  padding-top: 27px;
+  color: #fff;
+}
+.description_subtitle_item svg {
+  position: relative;
+  display: block;
+  left: 76%;
+  opacity: 0.5;
+  fill: #149080;
+}
+.description_subtitle_item:first-child {
+  background: #63d1bb;
+}
+.description_subtitle_item:first-child svg {
+  top: -52px;
+}
+.description_subtitle_item:last-child {
+  background: #56c3b2;
+}
+.description_subtitle_item:last-child svg {
+  top: -55px;
+  left: 72.8%;
+}
+.description_subtitle_item:hover {
+  height: 108px;
+  margin-top: -5px;
+}
+.description_subtitle_item:hover svg {
+  opacity: 0.7;
+}
+.description_subtitle_item:active span,
+.description_subtitle_item:active svg {
+  opacity: 0.3;
+}
 @media (min-width: 768px) {
   .description {
     height: 743px;
@@ -28,40 +84,12 @@
   .description__box {
     height: 743px;
   }
-}
-.description__main_title {
-  text-align: center;
-  padding-top: 71px;
-  font-size: 27px;
-  width: 260px;
-  margin: 0 auto;
-}
-@media (min-width: 768px) {
   .description__main_title {
     padding-top: 154px;
     font-size: 43px;
     line-height: 50px;
-  }
-}
-@media (min-width: 1150px) {
-  .description__main_title {
-    font-size: 53px;
-    line-height: 57px;
-  }
-}
-@media (min-width: 768px) {
-  .description__main_title {
     width: auto;
   }
-}
-.description_subtitle {
-  position: relative;
-  top: 121px;
-  font-size: 19px;
-  line-height: 24px;
-  font-weight: bold;
-}
-@media (min-width: 768px) {
   .description_subtitle {
     display: flex;
     flex-direction: row;
@@ -70,87 +98,46 @@
     font-size: 20px;
     line-height: 30px;
   }
-}
-@media (min-width: 1150px) {
-  .description_subtitle {
-    top: 358px;
-  }
-}
-.description_subtitle_item {
-  height: 103px;
-  padding-left: 9.3%;
-  color: #fff;
-}
-@media (min-width: 768px) {
   .description_subtitle_item {
     height: 117px;
     width: 334px;
     padding-left: 35px;
   }
-}
-@media (min-width: 1150px) {
-  .description_subtitle_item {
-    width: 525px;
-    padding-left: 36px;
-  }
-}
-.description_subtitle_item span {
-  display: block;
-  width: 120px;
-  padding-top: 27px;
-  color: #fff;
-}
-@media (min-width: 768px) {
   .description_subtitle_item span {
     padding-top: 30px;
   }
-}
-@media (min-width: 1150px) {
-  .description_subtitle_item span {
-    padding-top: 29px;
-  }
-}
-.description_subtitle_item svg {
-  position: relative;
-  display: block;
-  left: 76%;
-  opacity: 0.5;
-}
-@media (min-width: 768px) {
   .description_subtitle_item svg {
     left: 222px;
   }
-}
-@media (min-width: 1150px) {
-  .description_subtitle_item svg {
-    left: 412px;
-  }
-}
-.description_subtitle_item:first-child {
-  background: #63d1bb;
-}
-.description_subtitle_item:first-child svg {
-  top: -52px;
-}
-@media (min-width: 768px) {
   .description_subtitle_item:first-child svg {
     top: -59px;
   }
-}
-.description_subtitle_item:last-child {
-  background: #56c3b2;
-}
-.description_subtitle_item:last-child svg {
-  top: -55px;
-  left: 72.8%;
-}
-@media (min-width: 768px) {
   .description_subtitle_item:last-child svg {
     top: -59px;
     left: 205px;
   }
+  .description_subtitle_item:hover {
+    height: 122px;
+  }
 }
 @media (min-width: 1150px) {
+  .description__main_title {
+    font-size: 53px;
+    line-height: 57px;
+  }
+  .description_subtitle {
+    top: 358px;
+  }
+  .description_subtitle_item {
+    width: 525px;
+    padding-left: 36px;
+  }
+  .description_subtitle_item span {
+    padding-top: 29px;
+  }
+  .description_subtitle_item svg {
+    left: 412px;
+  }
   .description_subtitle_item:last-child svg {
     top: -58px;
     left: 394px;
