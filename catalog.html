@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/style.css">
+  <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
   <title>Каталог товаров</title>
 </head>
 <body>
@@ -69,66 +70,125 @@
   </header>
   <main>
     <section class="subhead">
-      <h1 class="subhead_title">Каталог товаров</h1>
+      <div class="sss"></div>
+      <h2 class="subhead_title main__title">Каталог товаров</h2>
     </section>
     <section class="catalog__list">
 
-      <div class="catalog__product_item">
-        <div class="product__img">
-          <img src="img/photo_1_desktop.jpg" alt="Зайчик-попрыгайчик">
+      <div class="catalog__product_list modal__button_open">
+        <div class="catalog__product_img catalog__item">
+          <picture>
+            <source media="(max-width: 767px)" srcset="img/photo_1_mobile.jpg">
+            <source media="(max-width: 1149px)" srcset="img/photo_1_tablet.jpg">
+            <img src="img/photo_1_desktop.jpg" alt="Зайчик-попрыгайчик">
+          </picture>
         </div>
-        <div class="product__info">
-          <h3 class="product__info_title">Зайчик-попрыгайчик</h3>
-          <br>
-          <span class="product__info_desc">Рост 30 см, вес 200 г</span>
-          <span class="product__info_price">1 200 руб.</span>
+
+        <div class="catalog__product_info catalog__item">
+          <div class="product__info">
+            <h3 class="product__info_title catalog_title">Зайчик-попрыгайчик</h3>
+            <br>
+            <span class="product__info_desc">Рост 30 см, вес 200 г</span>
+          </div>
+
+          <div class="product__price">
+            <span class="price__info">1 200 руб.</span>
+            <svg class="price__svg" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="21px" height="18px" viewBox="264.205 370.961 20.294 18.849" enable-background="new 264.205 370.961 20.294 18.849" xml:space="preserve">
+              <path d="M283.75,378.19h-3.151l-3.407-6.814c-0.185-0.37-0.634-0.52-1.006-0.335 c-0.371,0.186-0.521,0.636-0.335,1.006l3.071,6.143h-9.138l3.072-6.143c0.185-0.371,0.035-0.821-0.335-1.006 c-0.37-0.185-0.821-0.035-1.006,0.335l-3.407,6.814h-3.151c-0.414,0-0.75,0.336-0.75,0.75s0.336,0.75,0.75,0.75h0.157l0.855,2.991 c-0.187,0.137-0.316,0.347-0.316,0.595c0,0.396,0.309,0.71,0.697,0.739l1.656,5.795h12.697l1.656-5.795 c0.388-0.028,0.698-0.344,0.698-0.739c0-0.249-0.129-0.459-0.316-0.596l0.854-2.991h0.157c0.414,0,0.75-0.336,0.75-0.75 S284.164,378.19,283.75,378.19z M279.569,388.311h-10.433l-1.224-4.284h12.881L279.569,388.311z M281.222,382.526h-13.739 l-0.81-2.836h15.359L281.222,382.526z"/>
+            </svg>
+          </div>
         </div>
       </div>
 
-      <div class="catalog__product_item">
-        <div class="product__img">
-          <img src="img/photo_2_desktop.jpg" alt="Корзинка для белья">
+      <div class="catalog__product_list modal__button_open">
+        <div class="catalog__product_img catalog__item">
+          <picture>
+            <source media="(max-width: 767px)" srcset="img/photo_2_mobile.jpg">
+            <source media="(max-width: 1149px)" srcset="img/photo_2_tablet.jpg">
+            <img src="img/photo_2_desktop.jpg" alt="Корзинка для белья">
+          </picture>
         </div>
-        <div class="product__info">
-          <h3 class="product__info_title">Корзинка для белья</h3>
-          <br>
-          <span class="product__info_desc">Диаметр 15 см, высота 10 см</span>
-          <span class="product__info_price">690 руб.</span>
+
+        <div class="catalog__product_info catalog__item">
+          <div class="product__info">
+            <h3 class="product__info_title catalog_title">Корзинка для белья</h3>
+            <br>
+            <span class="product__info_desc">Диаметр 15 см, высота 10 см</span>
+          </div>
+
+          <div class="product__price">
+            <span class="price__info">690 руб.</span>
+            <svg class="price__svg" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="21px" height="18px" viewBox="264.205 370.961 20.294 18.849" enable-background="new 264.205 370.961 20.294 18.849" xml:space="preserve">
+              <path d="M283.75,378.19h-3.151l-3.407-6.814c-0.185-0.37-0.634-0.52-1.006-0.335 c-0.371,0.186-0.521,0.636-0.335,1.006l3.071,6.143h-9.138l3.072-6.143c0.185-0.371,0.035-0.821-0.335-1.006 c-0.37-0.185-0.821-0.035-1.006,0.335l-3.407,6.814h-3.151c-0.414,0-0.75,0.336-0.75,0.75s0.336,0.75,0.75,0.75h0.157l0.855,2.991 c-0.187,0.137-0.316,0.347-0.316,0.595c0,0.396,0.309,0.71,0.697,0.739l1.656,5.795h12.697l1.656-5.795 c0.388-0.028,0.698-0.344,0.698-0.739c0-0.249-0.129-0.459-0.316-0.596l0.854-2.991h0.157c0.414,0,0.75-0.336,0.75-0.75 S284.164,378.19,283.75,378.19z M279.569,388.311h-10.433l-1.224-4.284h12.881L279.569,388.311z M281.222,382.526h-13.739 l-0.81-2.836h15.359L281.222,382.526z"/>
+            </svg>
+          </div>
         </div>
       </div>
 
-      <div class="catalog__product_item">
-        <div class="product__img">
-          <img src="img/photo_3_desktop.jpg" alt="Большая корзинка для игрушек">
+      <div class="catalog__product_list modal__button_open">
+        <div class="catalog__product_img catalog__item">
+          <picture>
+            <source media="(max-width: 767px)" srcset="img/photo_3_mobile.jpg">
+            <source media="(max-width: 1149px)" srcset="img/photo_3_tablet.jpg">
+            <img src="img/photo_3_desktop.jpg" alt="Большая корзинка для игрушек">
+          </picture>
         </div>
-        <div class="product__info">
-          <h3 class="product__info_title">Большая корзинка для игрушек</h3>
-          <br>
-          <span class="product__info_desc">Диаметр 30 см, высота 30 см</span>
-          <span class="product__info_price">1 500 руб.</span>
+
+        <div class="catalog__product_info catalog__item">
+          <div class="product__info">
+            <h3 class="product__info_titlecatalog_title">Большая корзинка для игрушек</h3>
+            <br>
+            <span class="product__info_desc">Диаметр 30 см, высота 30 см</span>
+          </div>
+
+          <div class="product__price">
+            <span class="price__info">1 500 руб.</span>
+            <svg class="price__svg" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="21px" height="18px" viewBox="264.205 370.961 20.294 18.849" enable-background="new 264.205 370.961 20.294 18.849" xml:space="preserve">
+              <path d="M283.75,378.19h-3.151l-3.407-6.814c-0.185-0.37-0.634-0.52-1.006-0.335 c-0.371,0.186-0.521,0.636-0.335,1.006l3.071,6.143h-9.138l3.072-6.143c0.185-0.371,0.035-0.821-0.335-1.006 c-0.37-0.185-0.821-0.035-1.006,0.335l-3.407,6.814h-3.151c-0.414,0-0.75,0.336-0.75,0.75s0.336,0.75,0.75,0.75h0.157l0.855,2.991 c-0.187,0.137-0.316,0.347-0.316,0.595c0,0.396,0.309,0.71,0.697,0.739l1.656,5.795h12.697l1.656-5.795 c0.388-0.028,0.698-0.344,0.698-0.739c0-0.249-0.129-0.459-0.316-0.596l0.854-2.991h0.157c0.414,0,0.75-0.336,0.75-0.75 S284.164,378.19,283.75,378.19z M279.569,388.311h-10.433l-1.224-4.284h12.881L279.569,388.311z M281.222,382.526h-13.739 l-0.81-2.836h15.359L281.222,382.526z"/>
+            </svg>
+
+          </div>
         </div>
       </div>
 
     </section>
     <section class="promo">
+
       <div class="promo__video">
-        <img src="img/catalog_video_desktop.jpg" alt="Видео">
+        <picture>
+          <source media="(max-width: 767px)" srcset="img/video-mobile.jpg">
+          <source media="(max-width: 1149px)" srcset="img/video-tablet.jpg">
+          <img src="img/video-desktop.jpg" alt="Видео">
+        </picture>
+        <img class="promo__video_play" src="img/icon_play.svg" alt="play">
       </div>
-      <div class="promo_desc">
-        <h3 class="promo_desc_title">Процесс производства</h3>
-        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="32px" height="32px" viewBox="0 0 32 32" enable-background="new 0 0 32 32" xml:space="preserve">
-        <g transform="translate(0 192)">
-          <path fill="#63D1BB" d="M26-177l6-4v16l-6-4V-177z M24-177v8c0,2.209-1.791,4-4,4H4c-2.209,0-4-1.791-4-4v-8c0-2.209,1.791-4,4-4h10 c0-1.105,0.895-2,2-2v-2H5c-0.553,0-1-0.447-1-1s0.447-1,1-1h12c0.553,0,1,0.447,1,1v3c1.105,0,2,0.895,2,2 C22.209-181,24-179.209,24-177z M12-177H4v8h8V-177z M20-176c0-0.553-0.447-1-1-1h-4c-0.553,0-1,0.447-1,1s0.447,1,1,1h4 C19.553-175,20-175.447,20-176z"/>
-        </g>
-        </svg>
-        <p class="promo_desc_text">По просьбам наших любимых фолловеров мы сняли для вас подробное видео
-           о том, как появляются наши товары.</p>
-        <a class="button" href="">сделать заказ</a>
+
+      <div class="promo__title">
+        <div class="promo__title_item">
+
+          <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="32px" height="32px" viewBox="0 0 32 32" enable-background="new 0 0 32 32" xml:space="preserve">
+            <g transform="translate(0 192)">
+              <path d="M26-177l6-4v16l-6-4V-177z M24-177v8c0,2.209-1.791,4-4,4H4c-2.209,0-4-1.791-4-4v-8c0-2.209,1.791-4,4-4h10 c0-1.105,0.895-2,2-2v-2H5c-0.553,0-1-0.447-1-1s0.447-1,1-1h12c0.553,0,1,0.447,1,1v3c1.105,0,2,0.895,2,2 C22.209-181,24-179.209,24-177z M12-177H4v8h8V-177z M20-176c0-0.553-0.447-1-1-1h-4c-0.553,0-1,0.447-1,1s0.447,1,1,1h4 C19.553-175,20-175.447,20-176z"/>
+            </g>
+          </svg>
+          <h3 class="promo__desc_title catalog_title">Процесс производства</h3>
+
+        </div>
+      </div>
+
+      <div class="promo__desc">
+        <div class="promo__desc_item">
+          <p class="promo_desc_text">По просьбам наших любимых фолловеров мы сняли для вас подробное видео
+             о том, как появляются наши товары.</p>
+          <a class="promo__desc_link button" href="#">сделать заказ</a>
+        </div>
       </div>
     </section>
   </main>
+
   <footer class="footer__page">
     <div class="footer__page_box container">
+
       <div class="footer__page_logo">
         <a href="index.html">
           <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="102px" height="34px" viewBox="0 0 101.615 34.056" enable-background="new 0 0 101.615 34.056" xml:space="preserve">
@@ -144,6 +204,7 @@
           </svg>
         </a>
       </div>
+
       <div class="social__links">
         <a class="social__link_insta" href="#">
           <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="22px" height="21px" viewBox="53.115 53.19 21.769 21.334" enable-background="new 53.115 53.19 21.769 21.334" xml:space="preserve">
@@ -173,6 +234,7 @@
           </svg>
         </a>
       </div>
+
       <div class="copyright">
         <a class="copyright__block" href="#" class="copyright__box">
           <span>Разработано</span>
@@ -181,8 +243,10 @@
           </svg>
         </a>
       </div>
+      
     </div>
   </footer>
+
   <dialog id="modal">
     <form method="dialog">
       <section class="modal_block container">
@@ -207,6 +271,7 @@
       </section>
     </form>
   </dialog>
+
   <script src="js/common.js"></script>
 </body>
 </html>

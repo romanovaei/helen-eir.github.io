@@ -130,8 +130,8 @@
 
   .nav__item_catalog {
     display: block;
-    position: absolute;//
-    top: 89px;//
+    position: absolute;
+    top: 89px;
     order: 3;
     flex: 28%;
     height: 60px;
@@ -140,6 +140,8 @@
     padding-top: 18px;
     padding-left: 50px;
     border-bottom: none;
+    z-index: 30;
+    opacity: 0.99;
 
     span {
       padding-left: 0;
@@ -148,17 +150,19 @@
 
   .nav__item_order {
     display: block;
-    position: absolute;//
-    top: 89px;//
+    position: absolute;
+    top: 89px;
     order: 4;
     flex: 21%;
     height: 60px;
     font-size: 15px;
     line-height: 24px;
     padding-top: 18px;
-    padding-left: 217px;//
+    padding-left: 217px;
     text-align: left;
     border-bottom: none;
+    z-index: 20;
+    opacity: 0.99;
 
     span {
       padding-left: 0;

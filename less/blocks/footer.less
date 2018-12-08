@@ -3,6 +3,7 @@
 @bg-light-color: #f1f1f1;
 @border-color-normal: #e5e5e5;
 @fill-light-color: #63d1bb;
+@fill-dark-color: #46c1ae;
 
 .footer__page {
   height: 160px;
@@ -16,6 +17,14 @@
 }
 .footer__page_logo {
   display: none;
+
+  svg:hover {
+    fill: @fill-dark-color;
+  }
+
+  svg:active {
+    opacity: 0.3;
+  }
 }
 
 .social__links {
@@ -24,9 +33,18 @@
   height: 79px;
   text-align: center;
 
-  a {
-    padding-right: 41px;
+  svg:hover {
+    fill: @fill-light-color;
   }
+
+  svg:active {
+    opacity: 0.3;
+  }
+}
+
+.social__link_insta,
+.social__link_fb {
+  padding-right: 41px;
 }
 
 .copyright {
@@ -40,6 +58,15 @@
 
   span {
     padding-top: 30px;
+  }
+
+  &:hover svg {
+    fill: @fill-dark-color;
+  }
+
+  &:active span,
+  &:active svg {
+    opacity: 0.3;
   }
 
   svg {
@@ -72,13 +99,13 @@
 
   .footer__page_logo {
     display: block;
-    flex: 242px;
+    flex: 185px;
   }
 
   .social__links {
     margin: 0;
     padding: 0;
-    flex: 242px;
+    flex: 298px;
     padding-top: 5px;
   }
 
@@ -86,7 +113,7 @@
     margin: 0;
     padding: 0;
     border-top: none;
-    flex: 184px;
+    flex: 185px;
 
     span {
       padding-top: 13px;
