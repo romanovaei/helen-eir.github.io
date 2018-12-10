@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/style.css">
+  <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
   <title>Вязание на заказ</title>
 </head>
 <body>
@@ -67,97 +68,115 @@
       </ul>
     </nav>
   </header>
-
+<div class="sss"></div>
+<div class="rrr"></div>
+<div class="eee"></div>
+<div class="www"></div>
+<div class="qqq"></div>
   <main>
-    <div>
-      <h1>Вязание на заказ</h1>
-    </div>
-    <div>
-      <p>Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму
-        заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
-    </div>
-    <form class="form" id="form" action="#" method="get">
+    <section class="subhead">
+      <h1 class="subhead_title main__title">Вязание на заказ</h1>
+    </section>
+
+    <form class="form" id="form" action="#" method="post">
       <!-- <form action="mailto:heleneir63@gmail.com" enctype="text/plain"> проверка формы  -->
-      <fieldset>
-        <div>
-          <h2 class="mark">тип</h2>
+      <p class="form_order">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму
+        заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
+      <div class="form__type">
+        <div class=" form__block">
+          <div class="form__type_headline form__block_title">
+            <h2 class="form_headline">тип</h2>
+          </div>
+          <div class="form__type_variation form__block_variation">
+            <input class="form_input" type="radio" id="type__accessory_1" form="form" name="type" checked>
+            <label class="form__type_label form_label" for="type__accessory_1">Аксессуар для интерьера</label>
+            <input class="form_input" type="radio" id="type__accessory_2" form="form" name="type">
+            <label class="form__type_label form_label" for="type__accessory_2">Детская игрушка</label>
+          </div>
         </div>
-        <div>
-          <input class="form__type form__type_accessory" type="radio" id="type__accessory_1" form="form" name="type" checked>
-          <label class="form__label form__label_radio" for="type__accessory_1">Аксессуар для интерьера</label>
-          <input class="form__type form__type_toy" type="radio" id="type__accessory_2" form="form" name="type">
-          <label class="form__label form__label_radio" for="type__accessory_2">Детская игрушка</label>
+      </div>
+
+      <div class="form__color">
+        <div class="form__block">
+          <div class="form__color_headline form__block_title">
+            <h2 class="form_headline">цвет</h2>
+          </div>
+          <div class="form__color_variation form__block_variation">
+            <input class="form_input" type="checkbox" id="color_white" form="form" name="color" checked>
+            <label class="form_label form__color_label" for="color_white">Белый</label>
+            <input class="form_input" type="checkbox" id="color_grey" form="form" name="color" checked>
+            <label class="form_label form__color_label" for="color_grey">Серый</label>
+            <input class="form_input" type="checkbox" id="color_tiffany" form="form" name="color">
+            <label class="form_label form__color_label" for="color_tiffany">"Тиффани"</label>
+            <input class="form_input" type="checkbox" id="color_black" form="form" name="color">
+            <label class="form_label form__color_label" for="color_black">Черный</label>
+            <input class="form_input" type="checkbox" id="color_pink" form="form" name="color">
+            <label class="form_label form__color_label" for="color_pink">Розовый</label>
+            <input class="form_input" type="checkbox" id="color_orange" form="form" name="color">
+            <label class="form_label form__color_label" for="color_orange">Оранжевый</label>
+          </div>
         </div>
-      </fieldset>
-      <fieldset>
-        <div>
-          <h2 class="mark">цвет</h2>
+      </div>
+
+      <div class="form__name">
+        <div class="form__block">
+          <div class="form__name_headline form__block_title">
+            <h2 class="form_headline">фио</h2>
+          </div>
+          <div class="form__name_variation form__block_variation">
+            <label class="form_label form__name_label" for="name_first-name">Имя:</label>
+            <input class="form__name_input form_first-name" name="first-name" type="text" id="name_first-name" form="form" placeholder="Введите ваше имя*" required>
+            <label class="form_label form__name_label" for="name_surname">Фамилия:</label>
+            <input class="form__name_input form_surname" name="surname" type="text" id="name_surname" form="form" placeholder="Укажите фамилию*" required>
+            <label class="form_label form__name_label" for="name_patronymic">Отчество:</label>
+            <input class="form__name_input form_patronymic" name="patronymic" type="text" id="name_patronymic" form="form" placeholder="Отчество, если желаете">
+          </div>
         </div>
-        <div>
-          <input class="form__color form__color_white" type="checkbox" id="color_white" form="form" name="color" checked>
-          <label class="form__label form__label_checkbox" for="color_white">Белый</label>
-          <input class="form__color form__color_grey" type="checkbox" id="color_grey" form="form" name="color" checked>
-          <label class="form__label form__label_checkbox" for="color_grey">Серый</label>
-          <input class="form__color form__color_tiffany" type="checkbox" id="color_tiffany" form="form" name="color">
-          <label class="form__label form__label_checkbox" for="color_tiffany">"Тиффани"</label>
-          <input class="form__color form__color_black" type="checkbox" id="color_black" form="form" name="color">
-          <label class="form__label form__label_checkbox" for="color_black">Черный</label>
-          <input class="form__color form__color_pink" type="checkbox" id="color_pink" form="form" name="color">
-          <label class="form__label form__label_checkbox" for="color_pink">Розовый</label>
-          <input class="form__color form__color_orange" type="checkbox" id="color_orange" form="form" name="color">
-          <label class="form__label form__label_checkbox" for="color_orange">Оранжевый</label>
-        </div>
-      </fieldset>
-      <fieldset>
-        <div>
-          <h2 class="mark">фио</h2>
-        </div>
-        <div>
-          <label class="form__name form__name_first-name" for="name_first-name">Имя:</label>
-          <input class="form__name form__name_first-name" name="first-name" type="text" id="name_first-name" form="form" placeholder="Введите ваше имя*" required>
-          <label class="form__name form__name_surname" for="name_surname">Фамилия:</label>
-          <input class="form__name form__name_surname" name="surname" type="text" id="name_surname" form="form" placeholder="Укажите фамилию*" required>
-          <label class="form__name form__name_patronymic" for="name_patronymic">Отчество:</label>
-          <input class="form__name form__name_patronymic" name="patronymic" type="text" id="name_patronymic" form="form" placeholder="Отчество, если желаете">
-        </div>
-      </fieldset>
-      <fieldset>
-        <div>
-          <h2 class="mark">тел</h2>
-          <input class="form__tel" name="tel" type="tel" form="form" placeholder="+7 XXX XX XX*" required>
-          <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="25px" height="24px" viewBox="0 0 24.829 24.333" enable-background="new 0 0 24.829 24.333" xml:space="preserve">
-            <g>
+      </div>
+
+      <div class="form__contact">
+        <div class="form__block">
+          <div class="form__contact_headline form__block_title">
+            <h2 class="form_headline">тел</h2>
+            <input class="form__tel" name="tel" type="tel" form="form" placeholder="+7 XXX XX XX*" required>
+            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="25px" height="24px" viewBox="0 0 24.829 24.333" enable-background="new 0 0 24.829 24.333" xml:space="preserve">
               <g>
                 <g>
-                  <path d="M17.321,24.333c-0.371,0-0.744,0-1.115,0c-4.904-0.58-8.497-2.857-11.11-5.772C2.473,15.637,0.402,11.875,0,6.817 c0-0.453,0-0.906,0-1.358c0.091-0.921,0.544-1.55,1.067-2.086c0.65-0.666,1.63-1.522,2.522-1.553 c0.659-0.022,1.78,0.451,2.232,1.066c0.388,0.53,0.595,1.59,0.775,2.378c0.185,0.797,0.6,1.95,0.485,2.717 C6.905,9.177,5.317,9.684,4.85,10.553c1.551,3.721,4.089,6.456,7.472,8.345c0.847-0.465,1.595-1.864,2.767-1.892 c0.428-0.012,0.972,0.209,1.406,0.34c0.477,0.143,0.891,0.326,1.311,0.484c0.705,0.266,1.957,0.621,2.378,1.213 c0.433,0.61,0.681,1.608,0.581,2.231C20.571,22.508,18.538,23.877,17.321,24.333z"/>
+                  <g>
+                    <path d="M17.321,24.333c-0.371,0-0.744,0-1.115,0c-4.904-0.58-8.497-2.857-11.11-5.772C2.473,15.637,0.402,11.875,0,6.817 c0-0.453,0-0.906,0-1.358c0.091-0.921,0.544-1.55,1.067-2.086c0.65-0.666,1.63-1.522,2.522-1.553 c0.659-0.022,1.78,0.451,2.232,1.066c0.388,0.53,0.595,1.59,0.775,2.378c0.185,0.797,0.6,1.95,0.485,2.717 C6.905,9.177,5.317,9.684,4.85,10.553c1.551,3.721,4.089,6.456,7.472,8.345c0.847-0.465,1.595-1.864,2.767-1.892 c0.428-0.012,0.972,0.209,1.406,0.34c0.477,0.143,0.891,0.326,1.311,0.484c0.705,0.266,1.957,0.621,2.378,1.213 c0.433,0.61,0.681,1.608,0.581,2.231C20.571,22.508,18.538,23.877,17.321,24.333z"/>
+                  </g>
                 </g>
+                <path d="M12.529,1.528c5.949,0,10.771,4.822,10.771,10.771h1.529C24.829,5.507,19.323,0,12.529,0V1.528z"/>
+                <path d="M12.529,9.327v1.552c0.785,0,1.421,0.636,1.421,1.42h1.553C15.502,10.657,14.172,9.327,12.529,9.327z"/>
+                <path d="M12.529,6.246c3.345,0,6.056,2.71,6.056,6.054h1.588c0-4.22-3.422-7.641-7.644-7.641V6.246z"/>
               </g>
-              <path d="M12.529,1.528c5.949,0,10.771,4.822,10.771,10.771h1.529C24.829,5.507,19.323,0,12.529,0V1.528z"/>
-              <path d="M12.529,9.327v1.552c0.785,0,1.421,0.636,1.421,1.42h1.553C15.502,10.657,14.172,9.327,12.529,9.327z"/>
-              <path d="M12.529,6.246c3.345,0,6.056,2.71,6.056,6.054h1.588c0-4.22-3.422-7.641-7.644-7.641V6.246z"/>
-            </g>
-          </svg>
+            </svg>
+          </div>
+          <div>
+            <h2 class="form_mark">e-mail</h2>
+            <input class="form__email" name="email" type="email" form="form" placeholder="Ваш Email*" required>
+            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="32px" height="32px" viewBox="0 0 32 32" enable-background="new 0 0 32 32" xml:space="preserve">
+              <path fill="#333333" d="M28,5H4C1.791,5,0,6.792,0,9v13c0,2.209,1.791,4,4,4h24c2.209,0,4-1.791,4-4V9 C32,6.792,30.209,5,28,5z M2,10.25l6.999,5.25L2,20.75V10.25z M30,22c0,1.104-0.898,2-2,2H4c-1.103,0-2-0.896-2-2l7.832-5.875 l4.368,3.277c0.533,0.397,1.166,0.6,1.8,0.6c0.633,0,1.266-0.201,1.799-0.6l4.369-3.277L30,22L30,22z M30,20.75l-7-5.25l7-5.25 V20.75z M17.199,18.602c-0.35,0.263-0.763,0.4-1.199,0.4s-0.851-0.139-1.2-0.4L10.665,15.5l-0.833-0.625L2,9.001V9 c0-1.103,0.897-2,2-2h24c1.102,0,2,0.897,2,2L17.199,18.602z"/>
+            </svg>
+          </div>
         </div>
-        <div>
-          <h2 class="mark">e-mail</h2>
-          <input class="form__email" name="email" type="email" form="form" placeholder="Ваш Email*" required>
-          <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="32px" height="32px" viewBox="0 0 32 32" enable-background="new 0 0 32 32" xml:space="preserve">
-            <path fill="#333333" d="M28,5H4C1.791,5,0,6.792,0,9v13c0,2.209,1.791,4,4,4h24c2.209,0,4-1.791,4-4V9 C32,6.792,30.209,5,28,5z M2,10.25l6.999,5.25L2,20.75V10.25z M30,22c0,1.104-0.898,2-2,2H4c-1.103,0-2-0.896-2-2l7.832-5.875 l4.368,3.277c0.533,0.397,1.166,0.6,1.8,0.6c0.633,0,1.266-0.201,1.799-0.6l4.369-3.277L30,22L30,22z M30,20.75l-7-5.25l7-5.25 V20.75z M17.199,18.602c-0.35,0.263-0.763,0.4-1.199,0.4s-0.851-0.139-1.2-0.4L10.665,15.5l-0.833-0.625L2,9.001V9 c0-1.103,0.897-2,2-2h24c1.102,0,2,0.897,2,2L17.199,18.602z"/>
-          </svg>
+      </div>
+
+      <div class="form__comment">
+        <div class="form__block">
+          <div class="form__comment_headline form__block_title">
+            <h2 class="form_headline">доп</h2>
+          </div>
+          <div>
+            <textarea class="form__description" name="description" form="form" placeholder="Опишите все ваши пожелания к заказу">
+            </textarea>
+          </div>
         </div>
-      </fieldset>
-      <fieldset>
-        <div>
-          <h2 class="mark">доп</h2>
-        </div>
-        <div>
-          <textarea class="form__description" name="description" form="form" placeholder="Опишите все ваши пожелания к заказу">
-          </textarea>
-        </div>
-      </fieldset>
+      </div>
+
       <div>
         <button class="button" form="form" type="submit">отправить заказ</button>
-        <p>*Поля обязательны для заполнения</p>
+        <span>*Поля обязательны для заполнения</span>
       </div>
     </form>
   </main>

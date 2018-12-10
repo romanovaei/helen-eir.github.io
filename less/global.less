@@ -1,5 +1,7 @@
 @tablet-width: ~"(min-width: 768px)";
 @desktop-width: ~"(min-width: 1150px)";
+@fill-light-color: #63d1bb;
+@text-light-color: #62d1ba;
 
 * {
   box-sizing: border-box;
@@ -55,3 +57,90 @@ li {
   font-weight: bold;
   text-transform: uppercase;
 }  // не видит
+
+.form__block {
+  border: none;
+  margin: 0 9.3%;
+}
+
+/*  для form  */
+
+.form__block {
+  display: flex;//
+  flex-direction: column;//
+
+  @media @tablet-width {
+    width: 668px;
+    margin: 0 auto;
+
+    @media @desktop-width {
+      width: 1050px;
+    }
+  }
+}
+
+.form__block_title {
+  @media @tablet-width {
+    width: 167px;
+  }
+
+  @media @desktop-width {
+    width: 175px;
+    text-align: center;
+    padding-right: 12px;  //  проверить для других
+  }
+}
+
+.form__block_variation {
+  display: flex;//
+  flex-direction: column;//
+  position: relative;//
+
+  @media @tablet-width {
+    width: 501px;
+  }
+
+  @media @desktop-width {
+    width: 875px;
+  }
+}
+
+.form_headline {
+  font-size: 17px;
+  line-height: 16px;
+  color: @fill-light-color;
+  text-transform: uppercase;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 6px;
+    left: 23.85%;
+    width: 76.15%;
+    height: 1px;
+    background: @text-light-color;
+
+    @media @tablet-width {
+      content: none;
+    }
+  }
+}
+
+.form_label {
+  font-size: 17px;
+  line-height: 18px;
+  font-weight: bold;
+
+  @media @tablet-width {
+    font-size: 19px;
+  }
+}
+
+.form_input {
+    display: none;
+  }
+
+  input {
+    border: none;
+  }

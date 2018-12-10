@@ -1,0 +1,25 @@
+.form_order {
+  font-size: 13px;
+  line-height: 24px;
+  color: #444444;
+  margin: 0 auto;
+  padding-top: 22px;
+  padding-bottom: 26px;
+  width: 81.4%;
+}
+@media (min-width: 768px) {
+  .form_order {
+    font-size: 17px;
+    line-height: 30px;
+    padding-top: 75px;
+    padding-bottom: 35px;
+    width: 668px;
+  }
+}
+@media (min-width: 1150px) {
+  .form_order {
+    padding-top: 104px;
+    padding-bottom: 52px;
+    width: 700px;
+  }
+}
