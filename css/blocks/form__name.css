@@ -9,15 +9,23 @@
   border-bottom: 2px solid #000;
   font-size: 17px;
   line-height: 10px;
+  color: #444444;
 }
 .form__name_input:focus {
   outline: none;
+}
+.form__name_input:hover {
+  border-color: #62d1ba;
+}
+.form__name_input:focus {
+  border-color: #62d1ba;
 }
 .form__name_input::-webkit-input-placeholder {
   color: #444444;
   opacity: 0.3;
 }
-.form__name_input::-moz-placeholder {
+.form__name_input::-moz-placeholder,
+.form__name_input::-webkit-input-placeholder {
   color: #444444;
   opacity: 0.3;
 }
