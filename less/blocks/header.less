@@ -42,6 +42,7 @@
 
   &:hover {
     opacity: 0.6;
+
     svg {
       fill: @fill-light-color;
       opacity: 1.0;
@@ -92,16 +93,32 @@
   top: 28px;
 }
 
-.nav__menu_open {
+.nav__menu_open .nav__item_link {
   display: block;
+  transform: scaleY(1);//
+  transition: transform .6s ease;//
 }
 
 .nav__item_hidden {
-    display: none;
-  }
+    //display: none;  старые стили
+    position: absolute;
+    top: -300px;
+
+    .nav__item_link {
+      transform: scaleY(0);//
+      transition: none;//
+    }
+}
 
 
 @media @tablet-width {
+  .nav__item_hidden {
+    position: static;
+    top: 0;
+    transform: scale(1);//
+    transition: transform .5s ease;//
+  }
+
   .header__page {
     width: 768px;
   }

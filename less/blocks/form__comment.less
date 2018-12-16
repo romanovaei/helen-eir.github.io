@@ -1,11 +1,15 @@
 @tablet-width: ~"(min-width: 768px)";
 @desktop-width: ~"(min-width: 1150px)";
 @text-color-dark: #444444;
+@text-light-color: #62d1ba;
 
 .form__comment {
-  min-height: 352px;
-  padding-top: 12px;
-  margin-bottom: 10px;
+  margin-top: 12px;
+  margin-bottom: 55px;
+
+  .form__block {
+    min-height: 296px;
+  }
 }
 
 .form__desc-order {
@@ -59,13 +63,14 @@
 
 @media @tablet-width {
   .form__comment {
-    min-height: 347px;
-    padding-top: 50px;
-    margin-bottom: 0px;
+    //min-height: 347px;
+    margin-top: 62px;
+    margin-bottom: 50px;
 
     .form__block {
       display: flex;
       flex-flow: row wrap;
+      min-height: 247px;
     }
   }
 
@@ -108,8 +113,8 @@
 }
 
 @media @desktop-width {
-  .form__comment {
-    min-height: 343px;
+  .form__comment .form__block {
+    min-height: 243px;
   }
 
   .form__comment_headline {
