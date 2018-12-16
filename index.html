@@ -9,35 +9,35 @@
 </head>
 <body>
 
-  <header class="header__page container">
-    <nav class="header__nav">
-      <ul class="nav__list">
+  <header class="header container">
+    <nav>
+      <ul class="nav nav__list">
 
-        <li class="nav__item nav__item_logo">
-          <a class="nav__item_link" href="#">
+        <li class="nav__item nav__item_type_logo">
+          <a class="nav__link" href="#">
             <picture>
               <source media="(max-width: 767px)" srcset="img/header_logo_mobile.svg">
               <source media="(max-width: 1149px)" srcset="img/header_logo_tablet.svg">
               <img src="img/header_logo_desktop.svg" alt="logo">
             </picture>
           </a>
-          <button class="nav__button_menu nav__button_menu_close" type="button"></button>
+          <button class="nav__mobile-menu-button  nav__mobile-menu-button_type_close" type="button"></button>
         </li>
 
-        <li class="nav__item nav__item_catalog nav__item_hidden">
-          <a class="nav__item_link" href="catalog.html">
+        <li class="nav__item catalog nav__item_type_hidden">
+          <a class="nav__link" href="catalog.html">
             <span>Каталог товаров</span>
           </a>
         </li>
 
-        <li class="nav__item nav__item_order nav__item_hidden">
-          <a class="nav__item_link" href="form.html">
+        <li class="nav__item order nav__item_type_hidden">
+          <a class="nav__link" href="form.html">
             <span>Вязание на заказ</span>
           </a>
         </li>
 
-        <li class="nav__item nav__item_search nav__item_hidden">
-          <a class="nav__item_link" href="">
+        <li class="nav__item search nav__item_type_hidden">
+          <a class="nav__link" href="">
             <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="18px" height="19px" viewBox="-0.8 -0.8 17.6 17.6" enable-background="new -0.8 -0.8 17.6 17.6" xml:space="preserve">
               <path d="M16.47,14.93l-3.415-3.415C14.02,10.226,14.6,8.634,14.6,6.899c0-4.253-3.447-7.699-7.7-7.699 S-0.8,2.646-0.8,6.899s3.446,7.7,7.699,7.7c1.734,0,3.326-0.58,4.613-1.546l3.417,3.416c0.203,0.202,0.418,0.33,0.771,0.33 c0.607,0,1.1-0.492,1.1-1.1C16.8,15.459,16.739,15.2,16.47,14.93z M1.399,6.899c0-3.038,2.462-5.5,5.5-5.5s5.5,2.462,5.5,5.5 s-2.462,5.5-5.5,5.5S1.399,9.938,1.399,6.899z"/>
             </svg>
@@ -45,8 +45,8 @@
           </a>
         </li>
 
-        <li class="nav__item nav__item_cart nav__item_hidden">
-          <a class="nav__item_link" href="">
+        <li class="nav__item cart nav__item_type_hidden">
+          <a class="nav__link" href="">
             <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="21px" height="18px" viewBox="264.205 370.961 20.294 18.849" enable-background="new 264.205 370.961 20.294 18.849" xml:space="preserve">
               <path d="M283.75,378.19h-3.151l-3.407-6.814c-0.185-0.37-0.634-0.52-1.006-0.335 c-0.371,0.186-0.521,0.636-0.335,1.006l3.071,6.143h-9.138l3.072-6.143c0.185-0.371,0.035-0.821-0.335-1.006 c-0.37-0.185-0.821-0.035-1.006,0.335l-3.407,6.814h-3.151c-0.414,0-0.75,0.336-0.75,0.75s0.336,0.75,0.75,0.75h0.157l0.855,2.991 c-0.187,0.137-0.316,0.347-0.316,0.595c0,0.396,0.309,0.71,0.697,0.739l1.656,5.795h12.697l1.656-5.795 c0.388-0.028,0.698-0.344,0.698-0.739c0-0.249-0.129-0.459-0.316-0.596l0.854-2.991h0.157c0.414,0,0.75-0.336,0.75-0.75 S284.164,378.19,283.75,378.19z M279.569,388.311h-10.433l-1.224-4.284h12.881L279.569,388.311z M281.222,382.526h-13.739 l-0.81-2.836h15.359L281.222,382.526z"/>
             </svg>
@@ -54,15 +54,15 @@
           </a>
         </li>
 
-        <li class="nav__item nav__item_new">
-          <a class="nav__item_link" href="">Новые поступления</a>
+        <li class="nav__item new">
+          <a class="nav__link" href="">Новые поступления</a>
         </li>
 
-        <li class="nav__item nav__item_sale">
-          <a class="nav__item_link" href="">Распродажа</a>
+        <li class="nav__item sale">
+          <a class="nav__link" href="">Распродажа</a>
         </li>
 
-        <li class="nav__item nav__item_delivery">
+        <li class="nav__item delivery">
           <span>Бесплатная доставка по России</span>
         </li>
 
@@ -74,11 +74,11 @@
 
     <section class="description container">
       <div class="description__box">
-        <div class="description_title">
-          <h2 class="description__main_title main__title">Милые штуки ручной<br>работы для дома</h2>
+        <div class="description__title">
+          <h2 class="description__title_text main__title">Милые штуки ручной<br>работы для дома</h2>
         </div>
-        <ul class="description_subtitle">
-          <li class="description_subtitle_item description_subtitle_left">
+        <ul class="description__subtitle">
+          <li class="description__subtitle_item">
             <a href="#">
               <span>Предметы интерьера</span>
               <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="41px" height="62px" viewBox="-259.404 -19.675 40.219 62.411" enable-background="new -259.404 -19.675 40.219 62.411" xml:space="preserve">
@@ -92,7 +92,7 @@
               </svg>
             </a>
           </li>
-          <li class="description_subtitle_item description_subtitle_right">
+          <li class="description__subtitle_item">
             <a href="#">
               <span>Детские игрушки</span>
               <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="60px" height="61px" viewBox="226.001 226.19 60 59.62" enable-background="new 226.001 226.19 60 59.62" xml:space="preserve">
@@ -104,13 +104,13 @@
       </div>
     </section>
 
-    <section class="product__hit">
-      <div class="product__hit_box container">
-        <div class="product__hit_block">
-          <h2 class="product__hit_title main__title">Вязаные корзинки</h2>
-          <span class="product__hit_mark">Товар недели</span>
-          <p class="product__hit_desc">Экологически чистая пряжа,<br>ручная работа. Доступны в шести<br>расцветках, и трех размерах.</p>
-          <table class="product__hit_table">
+    <section class="product-hit">
+      <div class="product-hit__box container">
+        <div class="product-hit__block">
+          <h2 class="product-hit__title main__title">Вязаные корзинки</h2>
+          <span class="product-hit__mark">Товар недели</span>
+          <p class="product-hit__desc">Экологически чистая пряжа,<br>ручная работа. Доступны в шести<br>расцветках, и трех размерах.</p>
+          <table class="product-hit__table">
             <tbody>
               <tr>
                 <td>
@@ -140,7 +140,7 @@
           </table>
         </div>
 
-        <div class="product__hit_img">
+        <div class="product-hit__img">
           <picture>
             <source media="(max-width: 767px)" srcset="img/triple_set_mobile.jpg">
             <source media="(max-width: 1149px)" srcset="img/triple_set_tablet.jpg">
@@ -148,9 +148,9 @@
           </picture>
         </div>
 
-        <div class="product__hit_price">
+        <div class="product-hit__price">
           <span>Цена: 990 руб.</span>
-          <button class="button product__hit_button modal__button_open" type="button">Заказать</button>
+          <button class="button product-hit__button modal__button_type_open" type="button">Заказать</button>
         </div>
       </div>
     </section>
@@ -233,32 +233,32 @@
     </section>
 
     <section class="reviews">
-      <div class="reviews_box container">
+      <div class="reviews__box container">
         <h2 class="reviews__title main__title">Отзывы</h2>
         <div class="reviews__button">
-          <button class="button reviews__button_write" type="button">написать</button>
+          <button class="button reviews__button_type_write" type="button">написать</button>
         </div>
         <div class="reviews__list">
           <blockquote class="reviews__item">
-            <p class="reviews__text">Я молодая мама, но все равно фотографии не набирали и близко такого количества
+            <p>Я молодая мама, но все равно фотографии не набирали и близко такого количества
               лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров
               и игрушек в Мишке и мои фотографии сразу стали более стильнее, а также набирают
               больше лайков!</p>
           </blockquote>
         </div>
         <div class="reviews__author">
-          <span class="reviews__author_name">Анастасия Красильникова</span>
+          <span class="reviews__author_type_name">Анастасия Красильникова</span>
           <br>
           <span>@misssssiskras</span>
         </div>
 
         <div class="reviews__arrows">
-          <button class="reviews__button_arrow">
+          <button class="reviews__arrows_type_button">
             <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="50px" height="26px" viewBox="0 0 50 26.003" enable-background="new 0 0 50 26.003" xml:space="preserve">
               <polygon points="50,11.002 7.659,11.002 15.833,2.828 13.005,0 0,12.998 0.003,13.001 0,13.005 13.005,26.003 15.833,23.175 7.661,15.002 50,15.002 "/>
             </svg>
           </button>
-          <button class="reviews__button_arrow">
+          <button class="reviews__arrows_type_button">
             <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="50px" height="26px" viewBox="0 0 50 26.003" enable-background="new 0 0 50 26.003" xml:space="preserve">
               <polygon points="0,11.002 42.341,11.002 34.166,2.828 36.995,0 50,12.998 49.996,13.001 50,13.005 36.995,26.003 34.166,23.175 42.339,15.002 0,15.002 "/>
             </svg>
@@ -271,13 +271,13 @@
     <section class="contacts container">
       <div class="contacts__box">
           <h2 class="contacts__title main__title">Контакты</h2>
-          <svg class="contacts__box_icon" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="47px" height="81px" viewBox="-11.34 -28.346 46.68 81.691" enable-background="new -11.34 -28.346 46.68 81.691" xml:space="preserve">
+          <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="47px" height="81px" viewBox="-11.34 -28.346 46.68 81.691" enable-background="new -11.34 -28.346 46.68 81.691" xml:space="preserve">
             <g id="miu">
               <g id="Artboard-1" transform="translate(-755.000000, -443.000000)">
                 <g id="slice" transform="translate(215.000000, 119.000000)">
                 </g>
                 <g id="editor-flag-triangle-notification-glyph">
-                  <path fill="#63D1BB" d="M751.439,418.545v38.9l38.9-19.451L751.439,418.545z M743.66,496.346v-81.691h3.805v81.691H743.66z"/>
+                  <path fill="#63D1BB"  d="M751.439,418.545v38.9l38.9-19.451L751.439,418.545z M743.66,496.346v-81.691h3.805v81.691H743.66z"/>
                 </g>
               </g>
             </g>
@@ -287,13 +287,13 @@
           </svg>
       </div>
       <table class="contacts__table">
-          <tbody class="contacts__table_block">
+          <tbody class="contacts__table_type_content">
             <tr>
               <td>
                 e-mail:
               </td>
               <td>
-                <a class="contacts__table_link" href="">info@mimimishkashop.ru</a>
+                <a class="contacts__table_type_link" href="">info@mimimishkashop.ru</a>
               </td>
             </tr>
             <tr>
@@ -317,10 +317,10 @@
 
   </main>
 
-  <footer class="footer__page">
+  <footer class="footer">
 
-    <div class="footer__page_box container">
-      <div class="footer__page_logo">
+    <div class="footer__box container">
+      <div class="footer__logo">
         <a href="index.html">
           <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="102px" height="34px" viewBox="0 0 101.615 34.056" enable-background="new 0 0 101.615 34.056" xml:space="preserve">
           <g>
@@ -335,8 +335,8 @@
           </svg>
         </a>
       </div>
-      <div class="social__links">
-        <a class="social__link_insta" href="#">
+      <div class="footer__social-links">
+        <a class="footer__social-links_type_insta" href="#">
           <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="22px" height="21px" viewBox="53.115 53.19 21.769 21.334" enable-background="new 53.115 53.19 21.769 21.334" xml:space="preserve">
             <g>
               <g>
@@ -345,7 +345,7 @@
               </g>
             </svg>
         </a>
-        <a class="social__link_fb" href="#">
+        <a class="footer__social-links_type_fb" href="#">
           <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="15px" height="29px" viewBox="56.519 49.996 14.962 27.718" enable-background="new 56.519 49.996 14.962 27.718" xml:space="preserve">
             <g>
               <g>
@@ -354,7 +354,7 @@
             </g>
           </svg>
         </a>
-        <a class="social__link_tw" href="#">
+        <a class="footer__social-links_type_tw" href="#">
           <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="24px" height="20px" viewBox="52.253 53.771 23.494 20.168" enable-background="new 52.253 53.771 23.494 20.168" xml:space="preserve">
             <g>
               <g>
@@ -364,8 +364,8 @@
           </svg>
         </a>
       </div>
-      <div class="copyright">
-        <a class="copyright__block copyright__box" href="#">
+      <div class="footer__copyright">
+        <a class="footer__copyright-link" href="#">
           <span>Разработано</span>
           <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="27px" height="34px" viewBox="0 0 26.943 34.09" enable-background="new 0 0 26.943 34.09" xml:space="preserve">
             <path d="M13.62,0.017L13.472,0L0,1.412v24.661l13.473,8.017l13.43-7.99l0.042-0.025V1.412L13.62,0.017z M25.019,12.127L13.495,5.334 L13.494,5.23l-0.087,0.05l-0.088-0.056v0.109L1.925,12.118V3.147l11.548-1.212l11.547,1.212V12.127z M13.405,6.787L24.923,13.5 l-4.479,2.64l-7.093-4.221l-0.014,1.415l5.904,3.513l-0.86,0.507l-5.03-2.992l-0.014,1.415l3.827,2.275l-0.782,0.523l-3.031-1.787 l-0.014,1.413l1.853,1.091l-1.8,1.081L2.034,13.622L13.405,6.787z M1.925,15.127l11.411,6.791l0.016,1.044L5.41,18.234L5.395,19.65 l7.979,4.795l0.018,1.076l-7.973-4.74l-0.013,1.414l8.021,4.822l0.046,0.025l8.143-4.872l-0.011-5.177l3.415-2.036v10.021 L13.472,31.85L1.925,24.979V15.127z"/>
@@ -376,25 +376,25 @@
 
   </footer>
 
-  <dialog id="modal">
+  <dialog class="modal" id="formModal">
     <form method="get">
-      <section class="modal_block container">
+      <section class="modal__block container">
 
-        <div class="modal__block_title">
-          <h3 class="modal_title">добавить в корзину</h3>
+        <div class="modal__title">
+          <h3 class="modal__title_text">добавить в корзину</h3>
         </div>
-        <span class="modal_elem">Выберите размер:</span>
+        <span class="modal__elem">Выберите размер:</span>
 
-        <div class="modal_box">
-          <input class="form__input_modal" type="checkbox" id="s_size" name="s_size" checked>
-          <label class="form__label_modal" for="s_size">s</label>
-          <input class="form__input_modal" type="checkbox" id="m_size" name="m_size">
-          <label class="form__label_modal" for="m_size">m</label>
-          <input class="form__input_modal" type="checkbox" id="l_size" name="l_size">
-          <label class="form__label_modal" for="l_size">l</label>
+        <div class="modal__section">
+          <input class="modal__input" type="checkbox" id="s_size" name="s_size" checked>
+          <label class="modal__label" for="s_size">s</label>
+          <input class="modal__input" type="checkbox" id="m_size" name="m_size">
+          <label class="modal__label" for="m_size">m</label>
+          <input class="modal__input" type="checkbox" id="l_size" name="l_size">
+          <label class="modal__label" for="l_size">l</label>
         </div>
         <button class="modal__button button" type="submit">добавить</button>
-        <button class="modal__button_close" type="reset"></button>
+        <button class="modal__button_type_close" type="reset"></button>
 
       </section>
     </form>
