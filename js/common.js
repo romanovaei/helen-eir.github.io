@@ -1,25 +1,46 @@
 $(function () {
-  var openMenu = function() {
 
-	  $(this).toggleClass("nav__button_menu_close");
-    $(this).toggleClass("nav__button_menu_open");
-    $(".nav__item_catalog, .nav__item_order, .nav__item_search, .nav__item_cart").toggleClass("nav__item_hidden");
-    $(".nav__item_catalog, .nav__item_order, .nav__item_search, .nav__item_cart").toggleClass("nav__menu_open");
+  var openMenu = function() {
+	  $(this).toggleClass("nav__mobile-menu-button_type_close");
+    $(this).toggleClass("nav__mobile-menu-button_type_open");
+    $(".catalog, .order, .search, .cart").toggleClass("nav__item_type_hidden");
+    $(".catalog, .order, .search, .cart").toggleClass("nav__menu_type_open");
 
 	};
 
-	$(".nav__button_menu").click(openMenu);
+	$(".nav__mobile-menu-button").click(openMenu);
 
 
 
   (function() {
-      $(".modal__button_open").bind("click", function() {
-          modal.showModal();
+      $(".modal__button_type_open").bind("click", function() {
+          formModal.showModal();
       });
 
-      $(".modal__button_close").bind("click", function() {
-          modal.close();
+      $(".modal__button_type_close").bind("click", function() {
+          formModal.close();
       });
   })();
+
+
+/* отправка Email */
+
+  $(document).ready(function() {
+
+  	$("#form").submit(function() {
+  		$.ajax({
+  			type: "POST",
+  			url: "../mail.php",
+  			data: $(this).serialize()
+  		}).done(function() {
+  			$(this).find("input").val("");
+  			alert("Спасибо за заявку! Скоро мы с вами свяжемся.");
+  			$("#form").trigger("reset");
+  		});
+  		return false;
+  	});
+
+  });
+
 
 });
