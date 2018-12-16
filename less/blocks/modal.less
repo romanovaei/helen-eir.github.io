@@ -1,151 +1,144 @@
-@tablet-width: ~"(min-width: 768px)";
-@fill-light-color: #63d1bb;
-@text-color-dark: #444444;
-@border-color-light: #ececec;
-.text__bold_upp() {
-  font-weight: bold;
-  text-transform: uppercase;
-}
+@import "../variables.less";
 
-
-#modal {
+.modal {
   width: 100%;
   height: 338px;
   padding: 0 9.3%;
   border: none;
   border-top: 1px solid #c7c7c7;
   border-bottom: 1px solid #c7c7c7;
-}
 
-.modal_block {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-}
-
-.modal__block_title {
-  margin: 0 auto;
-}
-
-.modal_title {
-  font-size: 25px;
-  line-height: 30px;
-  text-transform: uppercase;
-  padding-top: 31px;
-  width: 160px;
-}
-
-.modal_elem {
-  font-size: 15px;
-  line-height: 30px;
-  color: @text-color-dark;
-  padding-top: 12px;
-}
-
-.modal_box {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  padding-top: 22px;
-}
-
-.form__input_modal {
-  display: none;
-}
-
-.form__input_modal + label {
-  display: block;
-  width: 25.6%;
-  height: 52px;
-  border: 2px solid fade(@text-color-dark, 10%);
-}
-
-.form__input_modal:checked + label {
-  border: 2px solid @fill-light-color;
-}
-
-.form__label_modal {
-  .text__bold_upp();
-  font-size: 17px;
-  line-height: 16px;
-  color: @text-color-dark;
-  cursor: pointer;
-  padding-top: 16px;
-
-  &:hover {
-    border: 2px solid fade(@text-color-dark, 30%);
+  &__block {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
   }
-}
 
-.modal__button {
-  width: 100%;
-  border: none;
-  background: @fill-light-color;
-  color: #ffffff;
-  margin-top: 31px;
-}
+  &__title {
+    margin: 0 auto;
 
-.modal__button_close {
-  position: absolute;
-  top: 14px;
-  right: 15px;
-  background: url(/img/icon_menu_close.svg) no-repeat;
-  width: 21px;
-  height: 21px;
-  border: none;
+    &_text {
+      font-size: 25px;
+      line-height: 30px;
+      text-transform: uppercase;
+      padding-top: 31px;
+      width: 160px;
+    }
+  }
 
-  &:focus {
-    outline: none;
+  &__elem {
+    font-size: 15px;
+    line-height: 30px;
+    color: @text-color-dark;
+    padding-top: 12px;
+  }
+
+  &__section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 22px;
+  }
+
+  &__input {
+    display: none;
+  }
+
+  &__input + label {
+    display: block;
+    width: 25.6%;
+    height: 52px;
+    border: 2px solid fade(@text-color-dark, 10%);
+  }
+
+  &__input:checked + label {
+    border: 2px solid @fill-light-color;
+  }
+
+  &__label {
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 17px;
+    line-height: 16px;
+    color: @text-color-dark;
+    cursor: pointer;
+    padding-top: 16px;
+
+    &:hover {
+      border: 2px solid fade(@text-color-dark, 30%);
+    }
+  }
+
+  &__button {
+    width: 100%;
+    border: none;
+    background: @fill-light-color;
+    color: #ffffff;
+    margin-top: 31px;
+
+    &_type_close {
+      position: absolute;
+      top: 14px;
+      right: 15px;
+      background: url(/img/icon_menu_close.svg) no-repeat;
+      width: 21px;
+      height: 21px;
+      border: none;
+
+      &:focus {
+        outline: none;
+      }
+    }
   }
 }
 
 @media @tablet-width {
-  #modal {
+  .modal {
     width: 568px;
     margin: 0 auto;
     padding: 0;
     border: none;
-  }
 
-  .modal_block {
-    padding: 0 109px;
-    width: 568px;
-    height: 338px;
-    border: 1px solid #c7c7c7;
-  }
+    &__block {
+      padding: 0 109px;
+      width: 568px;
+      height: 338px;
+      border: 1px solid #c7c7c7;
+    }
 
-  .modal_title {
-    font-size: 30px;
-    line-height: 57px;
-    padding-top: 33px;
-    width: 352px;
-  }
+    &__title_text {
+      font-size: 30px;
+      line-height: 57px;
+      padding-top: 33px;
+      width: 352px;
+    }
 
-  .modal_elem {
-    font-size: 17px;
-    padding-top: 14px;
-  }
+    &__elem {
+      font-size: 17px;
+      padding-top: 14px;
+    }
 
-  .modal_box {
-    padding-top: 21px;
-  }
+    &__section {
+      padding-top: 21px;
+    }
 
-  .form__input_modal + label {
-     width: 112px;
-  }
+    &__input + label {
+       width: 112px;
+    }
 
-  .modal__button {
-    width: 350px;
-    margin-top: 31px;
-  }
+    &__button {
+      width: 350px;
+      margin-top: 31px;
 
-  .modal__button_close {
-    position: relative;
-    top: -275px;
-    left: 421px;
-    background: url(/img/icon_menu_close.svg) no-repeat;
-    width: 21px;
-    height: 21px;
-    border: none;
+      &_type_close {
+        position: relative;
+        top: -275px;
+        left: 421px;
+        background: url(/img/icon_menu_close.svg) no-repeat;
+        width: 21px;
+        height: 21px;
+        border: none;
+      }
+    }
   }
 }

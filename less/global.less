@@ -1,8 +1,4 @@
-@tablet-width: ~"(min-width: 768px)";
-@desktop-width: ~"(min-width: 1150px)";
-@fill-light-color: #63d1bb;
-@text-light-color: #62d1ba;
-@text-color-dark: #444444;
+@import "variables.less";
 
 * {
   box-sizing: border-box;
@@ -57,7 +53,7 @@ li {
 .text__bold_upp() {
   font-weight: bold;
   text-transform: uppercase;
-}  // не видит
+}  // не видит  in product-hit
 
 /*  для form  */
 
@@ -85,7 +81,7 @@ li {
   @media @desktop-width {
     width: 175px;
     text-align: center;
-    padding-right: 12px;  //  проверить для других
+    padding-right: 12px;
   }
 }
 

@@ -1,8 +1,4 @@
-@tablet-width: ~"(min-width: 768px)";
-@desktop-width: ~"(min-width: 1150px)";
-@fill-light-color: #63d1bb;
-@fill-normal-color: #56c3b2;
-@bg-normal-color: #f9f9f9;
+@import "../variables.less";
 
 .description {
   width: 100%;
@@ -13,79 +9,81 @@
   background-repeat: no-repeat;
   opacity: 0.99;
   z-index: 5;
-}
-.description_title() {
-  text-align: center;
-  padding-top: 71px;
-  font-size: 27px;
-}
 
-.description__main_title {
-  .description_title();
-  width: 260px;
-  margin: 0 auto;
-}
+  &__title {
+    text-align: center;
+    padding-top: 71px;
 
-.description_subtitle {
-  position: relative;
-  top: 121px;
-  font-size: 19px;
-  line-height: 24px;
-  font-weight: bold;
-}
-.description_subtitle_item {
-  height: 103px;
-  padding-left: 9.3%;
-  color: #fff;
-
-  span {
-    display: block;
-    width: 120px;
-    padding-top: 27px;
-    color: #fff;
+    &_text {
+      font-size: 27px;
+      width: 260px;
+      margin: 0 auto;
+    }
   }
 
-  svg {
+  &__subtitle {
     position: relative;
-    display: block;
-    left: 76%;
-    opacity: 0.5;
-    fill: #149080;
-  }
+    top: 121px;
+    font-size: 19px;
+    line-height: 24px;
+    font-weight: bold;
 
-  &:first-child {
-    background: @fill-light-color;
+    &_item {
+      height: 103px;
+      padding-left: 9.3%;
+      color: #fff;
 
-    svg {
-      top: -52px;
+      span {
+        display: block;
+        width: 120px;
+        padding-top: 27px;
+        color: #fff;
+      }
+
+      svg {
+        position: relative;
+        display: block;
+        left: 76%;
+        opacity: 0.5;
+        fill: #149080;
+      }
+
+      &:first-child {
+        background: @fill-light-color;
+
+        svg {
+          top: -52px;
+        }
+      }
+
+      &:last-child {
+        background: @fill-normal-color;
+
+        svg {
+          top: -55px;
+          left: 72.8%;
+        }
+      }
+
+      &:hover {
+        height: 108px;
+        margin-top: -5px;
+        transition: height 0.6s ease, margin 0.6s ease;///
+
+        svg {
+          opacity: 0.7;
+          transition: opacity 0.3s ease;///
+        }
+      }
+
+      &:active span,
+      &:active svg {
+        opacity: 0.3;
+      }
     }
-  }
-
-  &:last-child {
-    background: @fill-normal-color;
-
-    svg {
-      top: -55px;
-      left: 72.8%;
-    }
-  }
-
-  &:hover {
-    height: 108px;
-    margin-top: -5px;
-    transition: height 0.6s ease, margin 0.6s ease;///
-
-    svg {
-      opacity: 0.7;
-      transition: opacity 0.3s ease;///
-    }
-  }
-
-  &:active span,
-  &:active svg {
-    opacity: 0.3;
   }
 }
+
 
 @media @tablet-width {
   .description {
@@ -109,69 +107,64 @@
     &__box {
       height: 743px;
     }
-  }
 
-  .description_title() {
-    padding-top: 154px;
-    font-size: 43px;
-  }
+    &__title {
+      padding-top: 154px;
 
-  .description__main_title {
-    .description_title();
-    width: auto;
-  }
-
-  .description_subtitle {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    top: 372px;
-    font-size: 20px;
-    line-height: 30px;
-  }
-
-  .description_subtitle_item {
-    height: 117px;
-    width: 334px;
-    padding-left: 35px;
-
-    span {
-      padding-top: 30px;
+      &_text {
+        font-size: 43px;
+        width: auto;
+      }
     }
 
-    svg {
-      left: 222px;
-    }
+    &__subtitle {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      top: 372px;
+      font-size: 20px;
+      line-height: 30px;
 
-    &:first-child svg {
-      top: -59px;
-    }
+      &_item {
+        height: 117px;
+        width: 334px;
+        padding-left: 35px;
 
-    &:last-child svg {
-      top: -59px;
-      left: 205px;
-    }
+        span {
+          padding-top: 30px;
+        }
 
-    &:hover {
-      height: 122px;
+        svg {
+          left: 222px;
+        }
+
+        &:first-child svg {
+          top: -59px;
+        }
+
+        &:last-child svg {
+          top: -59px;
+          left: 205px;
+        }
+
+        &:hover {
+          height: 122px;
+        }
+      }
     }
   }
 }
 
 @media @desktop-width {
-  .description_title() {
+  .description__title_text {
     font-size: 53px;
   }
 
-  .description__main_title {
-    .description_title();
-  }
-
-  .description_subtitle {
+  .description__subtitle {
     top: 358px;
   }
 
-  .description_subtitle_item {
+  .description__subtitle_item {
     width: 525px;
     padding-left: 36px;
 
