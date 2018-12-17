@@ -5,15 +5,15 @@
 @fill-light-color: #63d1bb;
 
 
-.form__type {
+.form-type {
   margin-bottom: 15px;
 }
 
-.form__type_headline {
+.form-type_headline {
   height: 30px;
 }
 
-.form__type_label {
+.form-type_label {
   position: relative;
   padding-top: 18px;
   padding-left: 23.85%;
@@ -33,7 +33,7 @@
 }
 
 .form_input:checked +
-.form__type_label::after {
+.form-type_label::after {
     content: "";
     position: absolute;
     top: 20px;
@@ -45,27 +45,27 @@
 }
 
 @media @tablet-width {
-  .form__type {
+  .form-type {
     height: 186px;
     margin-bottom: 0;
 
-    .form__block {
+    .form-type_block {
       flex-direction: row;
     }
   }
 
-  .form__type_headline {
+  .form-type_headline {
     padding-top: 26px;
     height: 186px;
   }
 
-  .form__type_variation {
+  .form-type_variation {
     padding-top: 2px;
     height: 186px;
 
   }
 
-  .form__type_label {
+  .form-type_label {
     font-size: 19px;
     padding-left: 80px;
     height: 75px;
@@ -78,7 +78,7 @@
   }
 
   .form_input:checked +
-  .form__type_label::after {
+  .form-type_label::after {
       left: 15px;
       width: 22px;
       height: 22px;
@@ -86,26 +86,26 @@
 }
 
 @media @desktop-width {
-  .form__type {
+  .form-type {
     height: 182px;
   }
 
-  .form__type_headline {
+  .form-type_headline {
     padding-top: 24px;
     height: 182px;
   }
 
-  .form__type_variation {
+  .form-type_variation {
     height: 182px;
   }
 
-  .form__type_label {
+  .form-type_label {
     padding-left: 80px;
     height: 75px;
   }
 
-  .form__type_input:checked +
-  .form__type_label::after {
+  .form-type_input:checked +
+  .form-type_label::after {
       left: 15px;
   }
 }
