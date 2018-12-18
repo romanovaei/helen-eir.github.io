@@ -4,7 +4,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: Arial,sans-serif;
+  font-family: Arial, sans-serif;
   list-style: none;
 }
 
@@ -26,34 +26,9 @@ li {
   list-style-type: none;
 }
 
-.main-title {
-  font-size: 25px;
-  line-height: 30px;
-
-  @media @tablet-width {
-    font-size: 43px;
-    line-height: 50px;
-  }
-
-  @media @desktop-width {
-    font-size: 53px;
-    line-height: 57px;
-  }
+input {
+  border: none;
 }
-
-.catalog_title {
-  font-size: 17px;
-  line-height: 24px;
-
-  @media @tablet-width {
-    font-size: 20px;
-  }
-}
-
-.text__bold_upp() {
-  font-weight: bold;
-  text-transform: uppercase;
-}  // не видит  in product-hit
 
 /*  для form  */
 
@@ -73,7 +48,7 @@ li {
   }
 }
 
-.form__block_title {
+.form__block_type_title {
   @media @tablet-width {
     width: 167px;
   }
@@ -85,7 +60,7 @@ li {
   }
 }
 
-.form__block_variation {
+.form__block_type_variation {
   display: flex;//
   flex-direction: column;//
   position: relative;//
@@ -99,7 +74,7 @@ li {
   }
 }
 
-.form_headline {
+.form__headline {
   font-size: 17px;
   line-height: 16px;
   color: @fill-light-color;
@@ -121,7 +96,7 @@ li {
   }
 }
 
-.form_label {
+.form-label {
   font-size: 17px;
   line-height: 18px;
   font-weight: bold;
@@ -140,7 +115,7 @@ li {
   }
 }
 
-.form_input {
+.form-input {
     display: none;
   }
 
