@@ -76,65 +76,65 @@
 
     <form class="form" id="form" action="#" method="post">
 
-      <p class="form_order">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму
+      <p class="form-order">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму
         заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
-      <div class="form__type">
+      <div class="form-type ">
         <div class=" form__block">
-          <div class="form__type_headline form__block_title">
-            <h2 class="form_headline">тип</h2>
+          <div class="form-type__headline form__block_type_title">
+            <h2 class="form__headline">тип</h2>
           </div>
-          <div class="form__type_variation form__block_variation">
-            <input class="form_input" type="radio" id="type__accessory_1" form="form" name="type" checked>
-            <label class="form__type_label form_label" for="type__accessory_1">Аксессуар для интерьера</label>
-            <input class="form_input" type="radio" id="type__accessory_2" form="form" name="type">
-            <label class="form__type_label form_label" for="type__accessory_2">Детская игрушка</label>
-          </div>
-        </div>
-      </div>
-
-      <div class="form__color">
-        <div class="form__block">
-          <div class="form__color_headline form__block_title">
-            <h2 class="form_headline">цвет</h2>
-          </div>
-          <div class="form__color_variation form__block_variation">
-            <input class="form_input" type="checkbox" id="color_white" form="form" name="color" checked>
-            <label class="form_label form__color_label" for="color_white">Белый</label>
-            <input class="form_input" type="checkbox" id="color_grey" form="form" name="color" checked>
-            <label class="form_label form__color_label" for="color_grey">Серый</label>
-            <input class="form_input" type="checkbox" id="color_tiffany" form="form" name="color">
-            <label class="form_label form__color_label" for="color_tiffany">"Тиффани"</label>
-            <input class="form_input" type="checkbox" id="color_black" form="form" name="color">
-            <label class="form_label form__color_label" for="color_black">Черный</label>
-            <input class="form_input" type="checkbox" id="color_pink" form="form" name="color">
-            <label class="form_label form__color_label" for="color_pink">Розовый</label>
-            <input class="form_input" type="checkbox" id="color_orange" form="form" name="color">
-            <label class="form_label form__color_label" for="color_orange">Оранжевый</label>
+          <div class="form-type__variation form__block_type_variation">
+            <input class="form-input" type="radio" id="type__accessory_1" form="form" name="type" checked>
+            <label class="form-type__label form-label" for="type__accessory_1">Аксессуар для интерьера</label>
+            <input class="form-input" type="radio" id="type__accessory_2" form="form" name="type">
+            <label class="form-type__label form-label" for="type__accessory_2">Детская игрушка</label>
           </div>
         </div>
       </div>
 
-      <div class="form__name">
+      <div class="form-color">
         <div class="form__block">
-          <div class="form__name_headline form__block_title">
-            <h2 class="form_headline">фио</h2>
+          <div class="form-color__headline form__block_type_title">
+            <h2 class="form__headline">цвет</h2>
           </div>
-          <div class="form__name_variation form__block_variation">
-            <label class="form_label form__name_label" for="name_first-name">Имя:</label>
-            <input class="form__name_input form_first-name" id="name_first-name" name="firstName" pattern="^[A-Za-zА-Яа-яЁё]+$" type="text" id="name_first-name" form="form" placeholder="Введите ваше имя*" required>
-            <label class="form_label form__name_label" for="name_surname">Фамилия:</label>
-            <input class="form__name_input form_surname" id="name_surname" name="surname" pattern="^[A-Za-zА-Яа-яЁё]+$" type="text" id="name_surname" form="form" placeholder="Укажите фамилию*" required>
-            <label class="form_label form__name_label" for="name_patronymic">Отчество:</label>
-            <input class="form__name_input form_patronymic" id="name_patronymic" name="patronymic" pattern="^[A-Za-zА-Яа-яЁё]+$" type="text" id="name_patronymic" form="form" placeholder="Отчество, если желаете">
+          <div class="form-color__variation form__block_type_variation">
+            <input class="form-input" type="checkbox" id="color_white" form="form" name="color" checked>
+            <label class="form-label form-color__label" for="color_white">Белый</label>
+            <input class="form-input" type="checkbox" id="color_grey" form="form" name="color" checked>
+            <label class="form-label form-color__label" for="color_grey">Серый</label>
+            <input class="form-input" type="checkbox" id="color_tiffany" form="form" name="color">
+            <label class="form-label form-color__label" for="color_tiffany">"Тиффани"</label>
+            <input class="form-input" type="checkbox" id="color_black" form="form" name="color">
+            <label class="form-label form-color__label" for="color_black">Черный</label>
+            <input class="form-input" type="checkbox" id="color_pink" form="form" name="color">
+            <label class="form-label form-color__label" for="color_pink">Розовый</label>
+            <input class="form-input" type="checkbox" id="color_orange" form="form" name="color">
+            <label class="form-label form-color__label" for="color_orange">Оранжевый</label>
           </div>
         </div>
       </div>
 
-      <div class="form__contact">
+      <div class="form-name">
         <div class="form__block">
-          <div class="form__contact_phone form__contact_block">
-            <h2 class="form_headline contact_block">тел</h2>
-            <input class="form__tel" name="phone" type="tel" pattern="[+]{1}[0-9]{,11}" form="form" maxlength="12" placeholder="+7 XXX XX XX*" required>
+          <div class="form-name__headline form__block_type_title">
+            <h2 class="form__headline">фио</h2>
+          </div>
+          <div class="form-name__variation form__block_type_variation">
+            <label class="form-label form-name__label" for="name_first-name">Имя:</label>
+            <input class="form-name__input form-name__first-name" maxlength="30" id="name_first-name" name="firstName" pattern="^[A-Za-zА-Яа-яЁё]+$" type="text" form="form" placeholder="Введите ваше имя*" required>
+            <label class="form-label form-name__label" for="name_surname">Фамилия:</label>
+            <input class="form-name__input form_surname" maxlength="30" id="name_surname" name="surname" pattern="^[A-Za-zА-Яа-яЁё]+$" type="text" form="form" placeholder="Укажите фамилию*" required>
+            <label class="form-label form-name__label" for="name_patronymic">Отчество:</label>
+            <input class="form-name__input form_patronymic" maxlength="30" id="name_patronymic" name="patronymic" pattern="^[A-Za-zА-Яа-яЁё]+$" type="text" form="form" placeholder="Отчество, если желаете">
+          </div>
+        </div>
+      </div>
+
+      <div class="form-contact">
+        <div class="form__block">
+          <div class="form-contact__phone form-contact__block">
+            <h2 class="form__headline form-contact__headline">тел</h2>
+            <input class="form-contact__block_type_input" name="phone" type="tel" pattern="[+]{1}[0-9]{,11}" form="form" maxlength="12" placeholder="+7 XXX XX XX*" required>
             <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="25px" height="24px" viewBox="0 0 24.829 24.333" enable-background="new 0 0 24.829 24.333" xml:space="preserve">
               <g>
                 <g>
@@ -149,9 +149,9 @@
             </svg>
           </div>
 
-          <div class="form__contact_e-mail form__contact_block">
-            <h2 class="form_headline contact_block">e-mail</h2>
-            <input class="form__email" name="email" type="email" form="form" placeholder="Ваш Email*" required>
+          <div class="form-contact__e-mail form-contact__block">
+            <h2 class="form__headline form-contact__headline">e-mail</h2>
+            <input class="form-contact__block_type_input" maxlength="30" name="email" type="email" form="form" placeholder="Ваш Email*" required>
             <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="32px" height="32px" viewBox="0 0 32 32" enable-background="new 0 0 32 32" xml:space="preserve">
               <path d="M28,5H4C1.791,5,0,6.792,0,9v13c0,2.209,1.791,4,4,4h24c2.209,0,4-1.791,4-4V9 C32,6.792,30.209,5,28,5z M2,10.25l6.999,5.25L2,20.75V10.25z M30,22c0,1.104-0.898,2-2,2H4c-1.103,0-2-0.896-2-2l7.832-5.875 l4.368,3.277c0.533,0.397,1.166,0.6,1.8,0.6c0.633,0,1.266-0.201,1.799-0.6l4.369-3.277L30,22L30,22z M30,20.75l-7-5.25l7-5.25 V20.75z M17.199,18.602c-0.35,0.263-0.763,0.4-1.199,0.4s-0.851-0.139-1.2-0.4L10.665,15.5l-0.833-0.625L2,9.001V9 c0-1.103,0.897-2,2-2h24c1.102,0,2,0.897,2,2L17.199,18.602z"/>
             </svg>
@@ -159,22 +159,22 @@
         </div>
       </div>
 
-      <div class="form__comment">
+      <div class="form-comment">
         <div class="form__block">
 
-          <div class="form__comment_headline form__block_title">
-            <h2 class="form_headline">доп</h2>
+          <div class="form-comment__headline form__block_type_title">
+            <h2 class="form__headline">доп</h2>
           </div>
 
-          <div class="form__desc-order">
-            <textarea class="form__desc_comment" name="description" form="form"  maxlength="500" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+          <div class="form-comment__desc-order">
+            <textarea class="form-comment__desc-order_type_comment" name="description" form="form"  maxlength="500" placeholder="Опишите все ваши пожелания к заказу"></textarea>
           </div>
 
-          <div class="form__button">
+          <div class="form-comment__button">
             <button class="button" form="form" type="submit">отправить заказ</button>
           </div>
 
-          <div class="form__tagged">
+          <div class="form-comment__tagged">
             <span>*Поля обязательны для заполнения</span>
           </div>
 
